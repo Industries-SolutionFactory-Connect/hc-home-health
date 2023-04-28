@@ -1,6 +1,6 @@
 {
   "orgName": "hc-home-health - Dev Org",
-  "edition": "Developer",
+  "template": "0TTB0000001XG75",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
