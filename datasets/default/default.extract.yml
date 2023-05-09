@@ -1,0 +1,688 @@
+extract:
+  Account:
+    fields:
+    - Description
+    - Fax
+    - Name
+    - AccountNumber
+    - Phone
+    - Rating
+    - Site
+    - AccountSource
+    - Type
+    - HealthCloudGA__Active__c
+    - IsActive
+    - AnnualRevenue
+    - PersonAssistantName
+    - PersonAssistantPhone
+    - BillingCity
+    - BillingCountry
+    - BillingGeocodeAccuracy
+    - BillingLatitude
+    - BillingLongitude
+    - BillingState
+    - BillingStreet
+    - BillingPostalCode
+    - PersonBirthdate
+    - HealthCloudGA__CarePlan__c
+    - HealthCloudGA__ConditionStatus__pc
+    - HealthCloudGA__ConvertedReferrals__pc
+    - HealthCloudGA__CountryOfBirth__pc
+    - HealthCloudGA__CreatedFromLead__pc
+    - Jigsaw
+    - HealthCloudGA__DeceasedDate__pc
+    - PersonDeceasedDate
+    - PersonDepartment
+    - HealthCloudGA__Disabled__c
+    - PersonDoNotCall
+    - EffectiveDate
+    - PersonEmail
+    - PersonEmailBouncedDate
+    - PersonEmailBouncedReason
+    - PersonHasOptedOutOfEmail
+    - NumberOfEmployees
+    - EndDate
+    - HealthCloudGA__EnrollmentType__c
+    - PersonHasOptedOutOfFax
+    - FirstName
+    - HealthCloudGA__Gender__pc
+    - PersonGender
+    - PersonGenderIdentity
+    - PersonHomePhone
+    - OperatingHoursId
+    - HealthCloudGA__IndividualId__c
+    - PersonIndividualId
+    - HealthCloudGA__IndividualType__c
+    - HealthCloudGA__IndividualType__pc
+    - Industry
+    - HealthCloudGA__Institution__c
+    - LastName
+    - PersonLeadSource
+    - HealthCloudGA__LowIncome__c
+    - PersonMailingCity
+    - PersonMailingCountry
+    - PersonMailingGeocodeAccuracy
+    - PersonMailingLatitude
+    - PersonMailingLongitude
+    - PersonMailingState
+    - PersonMailingStreet
+    - PersonMailingPostalCode
+    - PersonMaritalStatus
+    - HealthCloudGA__MedicaidEligibilityStatus__c
+    - HealthCloudGA__MedicalRecordNumber__c
+    - HealthCloudGA__MedicalRecordNumber__pc
+    - HealthCloudGA__MedicareEnrollee__c
+    - PersonMobilePhone
+    - HealthCloudGA__Monitored_at_Home__pc
+    - PersonSequenceInMultipleBirth
+    - HealthCloudGA__OREC__c
+    - PersonOtherCity
+    - PersonOtherCountry
+    - PersonOtherGeocodeAccuracy
+    - PersonOtherLatitude
+    - PersonOtherLongitude
+    - PersonOtherPhone
+    - PersonOtherState
+    - PersonOtherStreet
+    - PersonOtherPostalCode
+    - Ownership
+    - ParentId
+    - HealthCloudGA__PayerType__c
+    - HealthCloudGA__PreferredName__pc
+    - HealthCloudGA__PrimaryContact__c
+    - HealthCloudGA__PrimaryLanguage__pc
+    - PersonPronouns
+    - RecordTypeId
+    - Salutation
+    - HealthCloudGA__SecondaryLanguage__pc
+    - ShippingCity
+    - ShippingCountry
+    - ShippingGeocodeAccuracy
+    - ShippingLatitude
+    - ShippingLongitude
+    - ShippingState
+    - ShippingStreet
+    - ShippingPostalCode
+    - Sic
+    - SicDesc
+    - HealthCloudGA__SourceSystem__c
+    - HealthCloudGA__SourceSystem__pc
+    - HealthCloudGA__SourceSystemId__c
+    - HealthCloudGA__SourceSystemId__pc
+    - SourceSystemIdentifier
+    - SourceSystemModifiedDate
+    - HealthCloudGA__StatusGroup__pc
+    - HealthCloudGA__TaxId__c
+    - HealthCloudGA__Testing_Status__pc
+    - TickerSymbol
+    - PersonTitle
+    - HealthCloudGA__TotalReferrals__pc
+    - Website
+  Case:
+    fields:
+    - Comments
+    - Description
+    - HealthCloudGA__DueDate__c
+    - HealthCloudGA__FinancialValue__c
+    - HealthCloudGA__SortOrder__c
+    - HealthCloudGA__SourceAgencyMeasureID__c
+    - HealthCloudGA__SourceAgencyMeasureVersion__c
+    - HealthCloudGA__SourceAgency__c
+    - HealthCloudGA__SourceSystemID__c
+    - HealthCloudGA__SourceSystemModified__c
+    - HealthCloudGA__SourceSystem__c
+    - IsEscalated
+    - Origin
+    - Priority
+    - Reason
+    - Status
+    - Subject
+    - SuppliedCompany
+    - SuppliedEmail
+    - SuppliedName
+    - SuppliedPhone
+    - Type
+  OperatingHours:
+    fields:
+    - Description
+    - Name
+    - TimeZone
+  Contact:
+    fields:
+    - AssistantName
+    - AssistantPhone
+    - Birthdate
+    - DeceasedDate
+    - Department
+    - Description
+    - DoNotCall
+    - Email
+    - EmailBouncedDate
+    - EmailBouncedReason
+    - Fax
+    - FirstName
+    - Gender
+    - GenderIdentity
+    - HasOptedOutOfEmail
+    - HasOptedOutOfFax
+    - HealthCloudGA__ConditionStatus__c
+    - HealthCloudGA__ConvertedReferrals__c
+    - HealthCloudGA__CountryOfBirth__c
+    - HealthCloudGA__CreatedFromLead__c
+    - HealthCloudGA__DeceasedDate__c
+    - HealthCloudGA__Gender__c
+    - HealthCloudGA__IndividualType__c
+    - HealthCloudGA__MedicalRecordNumber__c
+    - HealthCloudGA__Monitored_at_Home__c
+    - HealthCloudGA__PreferredName__c
+    - HealthCloudGA__PrimaryLanguage__c
+    - HealthCloudGA__SecondaryLanguage__c
+    - HealthCloudGA__SourceSystemId__c
+    - HealthCloudGA__SourceSystem__c
+    - HealthCloudGA__StatusGroup__c
+    - HealthCloudGA__Testing_Status__c
+    - HealthCloudGA__TotalReferrals__c
+    - HomePhone
+    - Jigsaw
+    - LastName
+    - LeadSource
+    - MailingCity
+    - MailingCountry
+    - MailingGeocodeAccuracy
+    - MailingLatitude
+    - MailingLongitude
+    - MailingPostalCode
+    - MailingState
+    - MailingStreet
+    - MaritalStatus
+    - MobilePhone
+    - OtherCity
+    - OtherCountry
+    - OtherGeocodeAccuracy
+    - OtherLatitude
+    - OtherLongitude
+    - OtherPhone
+    - OtherPostalCode
+    - OtherState
+    - OtherStreet
+    - Phone
+    - Pronouns
+    - Salutation
+    - SequenceInMultipleBirth
+    - Title
+  FSL__Scheduling_Policy__c:
+    fields:
+    - FSL__Commit_Mode__c
+    - FSL__Description__c
+    - FSL__Fix_Overlaps__c
+    - FSL__Daily_Optimization__c
+    - Name
+    - FSL__Service_Clustering_Weight__c
+    - FSL__Service_Priority_Weight__c
+    - FSL__Travel_Mode__c
+  FSL__Work_Rule__c:
+    fields:
+    - FSL__Service_Schedule_Time_Property__c
+    - FSL__Active__c
+    - FSL__Boolean_Operator__c
+    - FSL__Break_Duration__c
+    - FSL__Break_Start__c
+    - FSL__CountObject__c
+    - FSL__CountTimeResolution__c
+    - FSL__CountType__c
+    - FSL__Crew_Resources_Availability__c
+    - FSL__CustomFieldName__c
+    - FSL__DefaultLimit__c
+    - FSL__Description__c
+    - FSL__Enable_Overtime__c
+    - FSL__Enhanced_Match_Linking_Object__c
+    - FSL__Is_Fixed_Gap__c
+    - FSL__Match_Constant_Boolean_Value__c
+    - FSL__Match_Skill_Level__c
+    - FSL__Maximum_Travel_From_Home_Type__c
+    - FSL__Maximum_Travel_From_Home__c
+    - FSL__Minimum_Gap__c
+    - FSL__Object_Group_Field__c
+    - FSL__Pass_Empty_Values__c
+    - FSL__Resource_Group_Field__c
+    - FSL__Resource_Property__c
+    - FSL__Service_Appointment_Matching_Field__c
+    - FSL__Service_Linking_Object_Reference_Field__c
+    - FSL__Service_Property__c
+    - FSL__Service_Time_Operator__c
+    - FSL__Service_Time_Property__c
+    - FSL__Start_of_Day__c
+    - FSL__Travel_From_Home__c
+    - FSL__Travel_To_Home__c
+    - FSL__WorkRule_End_DateTime_Field__c
+    - FSL__WorkRule_Start_DateTime_Field__c
+    - FSL__Working_Location_Enable_Primary__c
+    - FSL__isTimephased__c
+    - Name
+  FSL__Service_Goal__c:
+    fields:
+    - FSL__Custom_Logic_Data__c
+    - FSL__Custom_Type__c
+    - FSL__Ignore_Home_Base_Coordinates__c
+    - FSL__Object_Group_Field__c
+    - FSL__Prioritize_Resource__c
+    - RecordTypeId
+    - FSL__Resource_Priority_Field__c
+    - FSL__Resource_Group_Field__c
+    - Name
+  FSL__Scheduling_Policy_Goal__c:
+    fields:
+    - FSL__Service_Goal__c
+  FSL__Scheduling_Policy_Work_Rule__c:
+    fields:
+    - FSL__Scheduling_Policy__c
+    - FSL__Work_Rule__c
+  ServiceResource:
+    fields:
+    - AccountId
+    - IsActive
+    - AssetId
+    - IsCapacityBased
+    - SchedulingConstraintId
+    - Description
+    - FSL__Efficiency__c
+    - FSL__GanttLabel__c
+    - IsOptimizationCapable
+    - LastKnownLatitude
+    - LastKnownLongitude
+    - LocationId
+    - IsPrimary
+    - Name
+    - FSL__Online_Offset__c
+    - FSL__Picture_Link__c
+    - FSL__Priority__c
+    - ResourceType
+    - ServiceCrewId
+    - FSL__Travel_Speed__c
+    - RelatedRecordId
+  Asset:
+    fields:
+    - Name
+  SchedulingConstraint:
+    fields:
+    - Name
+  Location:
+    fields:
+    - CloseDate
+    - ConstructionEndDate
+    - ConstructionStartDate
+    - Description
+    - DrivingDirections
+    - ExternalReference
+    - IsInventoryLocation
+    - IsMobile
+    - Latitude
+    - LocationType
+    - Longitude
+    - Name
+    - OpenDate
+    - PossessionDate
+    - RemodelEndDate
+    - RemodelStartDate
+    - TimeZone
+  ServiceCrew:
+    fields:
+    - CrewSize
+    - Name
+  ServiceTerritory:
+    fields:
+    - IsActive
+    - Street
+    - City
+    - SchedulingConstraintId
+    - Country
+    - Description
+    - GeocodeAccuracy
+    - FSL__Hide_Emergency_Map__c
+    - OperatingHoursId
+    - FSL__Internal_SLR_Geolocation__Latitude__s
+    - FSL__Internal_SLR_Geolocation__Longitude__s
+    - Latitude
+    - Longitude
+    - Name
+    - FSL__NumberOfServicesToDripFeed__c
+    - ParentTerritoryId
+    - FSL__Service_Cluster_Min_Size__c
+    - FSL__Service_Cluster_Proximity__c
+    - State
+    - FSL__System_Jobs__c
+    - FSL__TerritoryLevel__c
+    - TravelModeId
+    - TypicalInTerritoryTravelTime
+    - FSL__O2_Enabled__c
+    - PostalCode
+  TravelMode:
+    fields:
+    - Name
+  ServiceTerritoryMember:
+    fields:
+    - Street
+    - City
+    - Country
+    - EffectiveEndDate
+    - GeocodeAccuracy
+    - OperatingHoursId
+    - FSL__Internal_SLR_HomeAddress_Geolocation__Latitude__s
+    - FSL__Internal_SLR_HomeAddress_Geolocation__Longitude__s
+    - Latitude
+    - Longitude
+    - ServiceResourceId
+    - Role
+    - EffectiveStartDate
+    - State
+    - ServiceTerritoryId
+    - TerritoryType
+    - TravelModeId
+    - PostalCode
+  WorkType:
+    fields:
+    - AppointmentCategoryId
+    - ApptStartTimeIntvlInMin
+    - ShouldAutoCreateSvcAppt
+    - BlockTimeAfterAppointment
+    - BlockTimeAfterUnit
+    - BlockTimeBeforeAppointment
+    - BlockTimeBeforeUnit
+    - DefaultAppointmentType
+    - Description
+    - FSL__Due_Date_Offset__c
+    - DurationType
+    - EstimatedDuration
+    - FSL__Exact_Appointments__c
+    - Name
+    - MinimumCrewSize
+    - OperatingHoursId
+    - RecommendedCrewSize
+    - ServiceReportTemplateId
+    - TimeFrameEndUnit
+    - TimeFrameStartUnit
+    - TimeframeEnd
+    - TimeframeStart
+  AppointmentCategory:
+    fields:
+    - Name
+  ServiceResourceSkill:
+    fields:
+    - EffectiveEndDate
+    - ServiceResourceId
+    - SkillId
+    - SkillLevel
+    - EffectiveStartDate
+  Skill:
+    fields:
+    - Description
+    - DeveloperName
+    - Language
+    - MasterLabel
+  SkillRequirement:
+    fields:
+    - RelatedRecordId
+    - SkillId
+    - SkillLevel
+  CareRequest:
+    fields:
+    - AppointedRepresentativeId
+    - MemberId
+    - ServicingFacilityId
+    - AcknowledgementLetterSentDate
+    - ActualAdmissionDate
+    - ActualDischargeDate
+    - AdmissionNotes
+    - AdmissionSource
+    - AdmissionType
+    - AorReceivedDate
+    - AorRequestedDate
+    - AppealRequestReasonType
+    - AppointedRepVerbalContactDate
+    - AppointedRepWrittenContactDate
+    - ApprovedLengthOfStay
+    - ApprovedLevelOfCare
+    - CareRequestCaseId
+    - ReferenceCareRequestCaseId
+    - ClaimNumber
+    - ClinicalCaseType
+    - GeneralPractitionerId
+    - RequestingPractitionerId
+    - ServicingPractitionerId
+    - CriteriaMet
+    - CumulativeLengthOfStay
+    - CurrentLevelOfCare
+    - DecisionDate
+    - DecisionLetter
+    - DecisionNotes
+    - DecisionReason
+    - DecisionReasonDescription
+    - DeniedLengthOfStay
+    - DeniedLevelOfCare
+    - DispositionNotes
+    - DueDate
+    - EffectiveFrom
+    - EffectiveTo
+    - ExpirationDate
+    - IsExtendedRequest
+    - ExtensionRequestReceivedDate
+    - ExternalComplaintIdentifier
+    - FacilityRecordNumber
+    - FacilityRoomBedType
+    - FacilityRoomNumber
+    - FinalLevelOfCare
+    - FirstReviewerNotes
+    - GeneralPractitionerVerbalNotifiedDate
+    - GeneralPractitionerWrittenNotifiedDate
+    - GrievanceType
+    - InfoReceivedDate
+    - InfoRequestedDate
+    - InitialDenialNotificationDate
+    - InitialDenialNotificationTime
+    - MedicalDirectorNotes
+    - MemberCondition
+    - MemberContactDateTime
+    - MemberDateOfBirth
+    - MemberFirstName
+    - MemberGender
+    - MemberGroupNumber
+    - MemberIdentificationNumber
+    - MemberLastName
+    - MemberPrimaryPlanId
+    - MemberSecondaryPlanId
+    - MemberPrognosis
+    - MemberStatus
+    - MemberVerbalNotificationDate
+    - MemberWrittenNotificationDate
+    - ModificationDate
+    - ModifiedLengthOfStay
+    - ModifiedLevelOfCare
+    - Name
+    - NextReviewDate
+    - ParProvider
+    - PlaceOfService
+    - PractitionerContactDateTime
+    - QuantityType
+    - IsReadmission
+    - ReceivedDate
+    - ReconsiderationDenialNotificationDate
+    - ReconsiderationDenialNotificationTime
+    - RecordTypeId
+    - ReferenceCaseNumber
+    - ReopenReason
+    - ReopenReasonDescription
+    - ReopenedDate
+    - RequestedDate
+    - RequestedLengthOfStay
+    - RequestedLevelOfCare
+    - RequesterType
+    - RequestingPractitionerLicense
+    - RequestingPractitionerSpecialty
+    - RequestPractitionerVerbalNotifiedDate
+    - RequestPractitionerWrittenNotifiedDate
+    - ResolutionDate
+    - ResolutionLetterSentDate
+    - ResolutionNotes
+    - ReviewDate
+    - RootCauseNotes
+    - ScheduledAdmissionDate
+    - ScheduledDischargeDate
+    - ServiceDate
+    - IsServiceOrMedicationReceived
+    - ServicingPractitionerLicense
+    - ServicingPractitionerSpecialty
+    - SourceSystem
+    - SourceSystemIdentifier
+    - SourceSystemModified
+    - FirstReviewerId
+    - MedicalDirectorId
+    - OriginalDenialMedicalDirectorId
+  MemberPlan:
+    fields:
+    - Name
+  CareRequestItem:
+    fields:
+    - TransportLocationId
+    - AmbulanceTransportDistance
+    - AmbulanceTransportReason
+    - AmbulanceTransportType
+    - ApprovedLengthOfStay
+    - ApprovedLevelOfCare
+    - ApprovedQuantity
+    - ApprovedServiceEndDate
+    - ApprovedServiceStartDate
+    - AuthApprovalIdentifier
+    - AuthorizationRefIdentifier
+    - CareRequestId
+    - CareRequestCaseId
+    - ClinicalDetermination
+    - ClinicalDeterminationNotes
+    - ClinicalServiceRequestId
+    - CodeDescription
+    - ClinicalDeterminationReasonId
+    - CodeType
+    - CodeTypeIdentifier
+    - CumulativeLengthOfStay
+    - CurrentLevelOfCare
+    - DecisionDate
+    - DeniedLevelOfCare
+    - DeniedQuantity
+    - EffectiveDate
+    - EndDate
+    - FreeFormProcedureDescription
+    - ModifiedProcedureCodeId
+    - ProcedureCodeId
+    - ServicingProviderId
+    - ModifiedCodeIdentifier
+    - ModifiedCodeDescription
+    - ModifiedCodeType
+    - ModifiedCodeTypeIdentifier
+    - ModifiedEffectiveDate
+    - ModifiedEndDate
+    - ModifiedLevelOfCare
+    - ModifiedModifier
+    - ModifiedModifierDescription
+    - ModifiedProcedureCodeSetId
+    - ModifiedQuantity
+    - Modifier
+    - Modifier2
+    - Modifier2Description
+    - Modifier3
+    - Modifier3Description
+    - Modifier4
+    - Modifier4Description
+    - ModifierCodeSetId
+    - ModifierDescription
+    - Name
+    - Priority
+    - ProcedureCodeSetId
+    - Quantity
+    - QuantityType
+    - ReasonCodeId
+    - RecordTypeId
+    - RequestType
+    - RequestedLengthOfStay
+    - RequestedLevelOfCare
+    - RequestedServiceEndDate
+    - RequestedServiceStartDate
+    - ServiceCategory
+    - ServiceCategoryCode
+    - ServicingFacilityId
+    - SourceSystem
+    - SourceSystemIdentifier
+    - SourceSystemModified
+    - Status
+    - StatusReason
+  ClinicalServiceRequest:
+    fields:
+    - DateSigned
+    - EndDate
+    - HasPrerequisites
+    - IsIgnored
+    - PatientInstruction
+    - Priority
+    - QuantityDenominator
+    - QuantityNumerator
+    - QuantityType
+    - SourceSystem
+    - SourceSystemIdentifier
+    - SourceSystemModified
+    - StartDate
+    - Status
+    - Type
+  CodeSet:
+    fields:
+    - Code
+    - Name
+  HealthCareProcedure:
+    fields:
+    - Name
+  HealthcareProvider:
+    fields:
+    - Name
+  ServiceTerritoryLocation:
+    fields:
+    - LocationId
+    - ServiceTerritoryId
+  AssociatedLocation:
+    fields:
+    - ParentRecordId
+    - ActiveFrom
+    - ActiveTo
+    - LocationId
+    - Type
+  WorkPlanTemplate:
+    fields:
+    - IsActive
+    - Description
+    - Name
+    - RelativeExecutionOrder
+  WorkPlanTemplateEntry:
+    fields:
+    - ExecutionOrder
+    - WorkPlanTemplateId
+    - WorkStepTemplateId
+  WorkStepTemplate:
+    fields:
+    - ActionDefinition
+    - Description
+    - IsActive
+    - Name
+  WorkPlanSelectionRule:
+    fields:
+    - AccountId
+    - IsActive
+    - AssetId
+    - ServiceTerritoryId
+    - Description
+    - WorkPlanTemplateId
+    - WorkTypeId
+    - LocationId
+    - Product2Id
+    - ServiceContractId
+  Product2:
+    fields:
+    - Name
+  ServiceContract:
+    fields:
+    - Name
