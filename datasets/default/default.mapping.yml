@@ -264,6 +264,18 @@ Insert Individual:
   table: Individual
   fields:
   - LastName
+Insert RecordsetFilterCriteria:
+  sf_object: RecordsetFilterCriteria
+  table: RecordsetFilterCriteria
+  fields:
+  - FilteredObject
+  - Name
+  - SourceObject
+Insert WorkTypeGroup:
+  sf_object: WorkTypeGroup
+  table: WorkTypeGroup
+  fields:
+  - Name
 Insert Account:
   sf_object: Account
   table: Account
@@ -509,6 +521,27 @@ Insert WorkPlanTemplateEntry:
     WorkStepTemplateId:
       table: WorkStepTemplate
       key_field: WorkStepTemplateId
+Insert TimeSlot:
+  sf_object: TimeSlot
+  table: TimeSlot
+  fields:
+  - DayOfWeek
+  - FSL__Designated_Work_Boolean_Fields__c
+  - EndTime
+  - MaxAppointments
+  - FSL__Slot_Color__c
+  - StartTime
+  - Type
+  lookups:
+    OperatingHoursId:
+      table: OperatingHours
+      key_field: OperatingHoursId
+    RecordsetFilterCriteriaId:
+      table: RecordsetFilterCriteria
+      key_field: RecordsetFilterCriteriaId
+    WorkTypeGroupId:
+      table: WorkTypeGroup
+      key_field: WorkTypeGroupId
 Insert ServiceResource:
   sf_object: ServiceResource
   table: ServiceResource

@@ -715,6 +715,13 @@ CREATE TABLE "Product2" (
 	"Name" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
+CREATE TABLE "RecordsetFilterCriteria" (
+	id INTEGER NOT NULL, 
+	"FilteredObject" VARCHAR(255), 
+	"Name" VARCHAR(255), 
+	"SourceObject" VARCHAR(255), 
+	PRIMARY KEY (id)
+);
 CREATE TABLE "SchedulingConstraint" (
 	id INTEGER NOT NULL, 
 	"Name" VARCHAR(255), 
@@ -879,6 +886,50 @@ INSERT INTO "SkillRequirement" VALUES(17,'','3');
 INSERT INTO "SkillRequirement" VALUES(18,'','2');
 INSERT INTO "SkillRequirement" VALUES(19,'','3');
 INSERT INTO "SkillRequirement" VALUES(20,'','1');
+CREATE TABLE "TimeSlot" (
+	id INTEGER NOT NULL, 
+	"DayOfWeek" VARCHAR(255), 
+	"FSL__Designated_Work_Boolean_Fields__c" VARCHAR(255), 
+	"EndTime" VARCHAR(255), 
+	"MaxAppointments" VARCHAR(255), 
+	"FSL__Slot_Color__c" VARCHAR(255), 
+	"StartTime" VARCHAR(255), 
+	"Type" VARCHAR(255), 
+	"OperatingHoursId" VARCHAR(255), 
+	"RecordsetFilterCriteriaId" VARCHAR(255), 
+	"WorkTypeGroupId" VARCHAR(255), 
+	PRIMARY KEY (id)
+);
+INSERT INTO "TimeSlot" VALUES(1,'Monday','','17:00:00.000Z','1','','09:00:00.000Z','Normal','1','','');
+INSERT INTO "TimeSlot" VALUES(2,'Tuesday','','17:00:00.000Z','1','','09:00:00.000Z','Normal','1','','');
+INSERT INTO "TimeSlot" VALUES(3,'Wednesday','','17:00:00.000Z','1','','09:00:00.000Z','Normal','1','','');
+INSERT INTO "TimeSlot" VALUES(4,'Thursday','','17:00:00.000Z','1','','09:00:00.000Z','Normal','1','','');
+INSERT INTO "TimeSlot" VALUES(5,'Friday','','17:00:00.000Z','1','','09:00:00.000Z','Normal','1','','');
+INSERT INTO "TimeSlot" VALUES(6,'Monday','','11:00:00.000Z','1','','09:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(7,'Monday','','13:00:00.000Z','1','','11:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(8,'Monday','','15:00:00.000Z','1','','13:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(9,'Monday','','17:00:00.000Z','1','','15:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(10,'Tuesday','','11:00:00.000Z','1','','09:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(11,'Tuesday','','13:00:00.000Z','1','','11:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(12,'Tuesday','','15:00:00.000Z','1','','13:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(13,'Tuesday','','17:00:00.000Z','1','','15:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(14,'Wednesday','','11:00:00.000Z','1','','09:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(15,'Wednesday','','13:00:00.000Z','1','','11:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(16,'Wednesday','','15:00:00.000Z','1','','13:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(17,'Wednesday','','17:00:00.000Z','1','','15:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(18,'Thursday','','11:00:00.000Z','1','','09:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(19,'Thursday','','13:00:00.000Z','1','','11:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(20,'Thursday','','15:00:00.000Z','1','','13:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(21,'Thursday','','17:00:00.000Z','1','','15:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(22,'Friday','','11:00:00.000Z','1','','09:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(23,'Friday','','13:00:00.000Z','1','','11:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(24,'Friday','','15:00:00.000Z','1','','13:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(25,'Friday','','17:00:00.000Z','1','','15:00:00.000Z','Normal','2','','');
+INSERT INTO "TimeSlot" VALUES(26,'Monday','','18:00:00.000Z','1','','09:00:00.000Z','Normal','3','','');
+INSERT INTO "TimeSlot" VALUES(27,'Tuesday','','18:00:00.000Z','1','','09:00:00.000Z','Normal','3','','');
+INSERT INTO "TimeSlot" VALUES(28,'Wednesday','','18:00:00.000Z','1','','09:00:00.000Z','Normal','3','','');
+INSERT INTO "TimeSlot" VALUES(29,'Thursday','','18:00:00.000Z','1','','09:00:00.000Z','Normal','3','','');
+INSERT INTO "TimeSlot" VALUES(30,'Friday','','18:00:00.000Z','1','','09:00:00.000Z','Normal','3','','');
 CREATE TABLE "TravelMode" (
 	id INTEGER NOT NULL, 
 	"Name" VARCHAR(255), 
@@ -969,4 +1020,9 @@ CREATE TABLE "WorkType" (
 INSERT INTO "WorkType" VALUES(1,'','False','','Minutes','','Minutes','','','','Minutes','30.0','False','Speech Therapy','','','Days','Days','','','','');
 INSERT INTO "WorkType" VALUES(2,'','False','','Minutes','','Minutes','','','','Hours','1.0','False','Physical Theraphy','','','Days','Days','','','','');
 INSERT INTO "WorkType" VALUES(3,'','False','','Minutes','','Minutes','','','','Hours','1.0','False','Wound and Ostomy Care','','','Days','Days','','','','');
+CREATE TABLE "WorkTypeGroup" (
+	id INTEGER NOT NULL, 
+	"Name" VARCHAR(255), 
+	PRIMARY KEY (id)
+);
 COMMIT;

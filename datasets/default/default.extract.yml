@@ -273,6 +273,8 @@ extract:
   FSL__Scheduling_Policy_Goal__c:
     fields:
     - FSL__Service_Goal__c
+    - FSL__Scheduling_Policy__c
+    - FSL__Weight__c
   FSL__Scheduling_Policy_Work_Rule__c:
     fields:
     - FSL__Scheduling_Policy__c
@@ -540,6 +542,7 @@ extract:
   MemberPlan:
     fields:
     - Name
+    - MemberId
   CareRequestItem:
     fields:
     - TransportLocationId
@@ -630,6 +633,7 @@ extract:
     - StartDate
     - Status
     - Type
+    - PatientId
   CodeSet:
     fields:
     - Code
@@ -684,5 +688,28 @@ extract:
     fields:
     - Name
   ServiceContract:
+    fields:
+    - Name
+  Individual:
+    fields:
+    - LastName
+  TimeSlot:
+    fields:
+    - DayOfWeek
+    - FSL__Designated_Work_Boolean_Fields__c
+    - EndTime
+    - MaxAppointments
+    - OperatingHoursId
+    - RecordsetFilterCriteriaId
+    - FSL__Slot_Color__c
+    - StartTime
+    - Type
+    - WorkTypeGroupId
+  RecordsetFilterCriteria:
+    fields:
+    - FilteredObject
+    - Name
+    - SourceObject
+  WorkTypeGroup:
     fields:
     - Name
