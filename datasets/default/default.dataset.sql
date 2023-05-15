@@ -6,8 +6,8 @@ CREATE TABLE "Account" (
 	"Name" VARCHAR(255), 
 	"AccountNumber" VARCHAR(255), 
 	"Phone" VARCHAR(255), 
-	"Rating" VARCHAR(255), 
-	"Site" VARCHAR(255), 
+	-- "Rating" VARCHAR(255), 
+	-- "Site" VARCHAR(255), 
 	"AccountSource" VARCHAR(255), 
 	"Type" VARCHAR(255), 
 	"HealthCloudGA__Active__c" VARCHAR(255), 
@@ -33,20 +33,20 @@ CREATE TABLE "Account" (
 	"PersonDeceasedDate" VARCHAR(255), 
 	"PersonDepartment" VARCHAR(255), 
 	"HealthCloudGA__Disabled__c" VARCHAR(255), 
-	"PersonDoNotCall" VARCHAR(255), 
+	-- "PersonDoNotCall" VARCHAR(255), 
 	"EffectiveDate" VARCHAR(255), 
 	"PersonEmail" VARCHAR(255), 
 	"PersonEmailBouncedDate" VARCHAR(255), 
 	"PersonEmailBouncedReason" VARCHAR(255), 
-	"PersonHasOptedOutOfEmail" VARCHAR(255), 
+	-- "PersonHasOptedOutOfEmail" VARCHAR(255), 
 	"NumberOfEmployees" VARCHAR(255), 
 	"EndDate" VARCHAR(255), 
 	"HealthCloudGA__EnrollmentType__c" VARCHAR(255), 
-	"PersonHasOptedOutOfFax" VARCHAR(255), 
+	-- "PersonHasOptedOutOfFax" VARCHAR(255), 
 	"FirstName" VARCHAR(255), 
 	"HealthCloudGA__Gender__pc" VARCHAR(255), 
 	"PersonGender" VARCHAR(255), 
-	"PersonGenderIdentity" VARCHAR(255), 
+	-- "PersonGenderIdentity" VARCHAR(255), 
 	"PersonHomePhone" VARCHAR(255), 
 	"HealthCloudGA__IndividualId__c" VARCHAR(255), 
 	"HealthCloudGA__IndividualType__c" VARCHAR(255), 
@@ -86,7 +86,7 @@ CREATE TABLE "Account" (
 	"HealthCloudGA__PayerType__c" VARCHAR(255), 
 	"HealthCloudGA__PreferredName__pc" VARCHAR(255), 
 	"HealthCloudGA__PrimaryLanguage__pc" VARCHAR(255), 
-	"PersonPronouns" VARCHAR(255), 
+	-- "PersonPronouns" VARCHAR(255), 
 	"RecordTypeId" VARCHAR(255), 
 	"Salutation" VARCHAR(255), 
 	"HealthCloudGA__SecondaryLanguage__pc" VARCHAR(255), 
@@ -98,7 +98,7 @@ CREATE TABLE "Account" (
 	"ShippingState" VARCHAR(255), 
 	"ShippingStreet" VARCHAR(255), 
 	"ShippingPostalCode" VARCHAR(255), 
-	"Sic" VARCHAR(255), 
+	-- "Sic" VARCHAR(255), 
 	"SicDesc" VARCHAR(255), 
 	"HealthCloudGA__SourceSystem__c" VARCHAR(255), 
 	"HealthCloudGA__SourceSystem__pc" VARCHAR(255), 
@@ -109,7 +109,7 @@ CREATE TABLE "Account" (
 	"HealthCloudGA__StatusGroup__pc" VARCHAR(255), 
 	"HealthCloudGA__TaxId__c" VARCHAR(255), 
 	"HealthCloudGA__Testing_Status__pc" VARCHAR(255), 
-	"TickerSymbol" VARCHAR(255), 
+	-- "TickerSymbol" VARCHAR(255), 
 	"PersonTitle" VARCHAR(255), 
 	"HealthCloudGA__TotalReferrals__pc" VARCHAR(255), 
 	"Website" VARCHAR(255), 
@@ -121,8 +121,8 @@ CREATE TABLE "Account" (
 	"PersonIndividualId" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "Account" VALUES(1,'','','','','(555) 123-4569','','','','','','False','','','','San Francisco','United States','','','','CA','101 Broadway St.','94111','1957-04-09','','','United States','False','','','','','False','False','','charles.green@example.com','','','False','','','NonDual','False','Charles','','Male','','','0012393275617476591683030464239','Individual','Individual','','False','Green','','False','San Francisco','United States','','','','CA','101 Broadway St.','94111','','False','','','','','','','','','','','','','','','','','','','','English','','0129A000003BPFlQAO','Mr.','English','San Francisco','United States','','','','CA','101 Broadway St.','94111','','','Health1-00D9A000000EDdK','Health1-00D9A000000EDdK','','','','','','','','','','','','True','','','','','');
-INSERT INTO "Account" VALUES(2,'','','','','','','','','','','False','','','','San Francisco','United States','','','','CA','101 Broadway St.','94111','1959-09-28','','','United States','False','','','','','False','False','','shawna.green@example.com','','','False','','','NonDual','False','Shawna','','Female','','','0014622456009537131683030464240','Individual','Individual','','False','Green','','False','San Francisco','United States','','','','CA','101 Broadway St.','94111','','False','','','','','','','','','','','','','','','','','','','','English','','0129A000003BPFlQAO','Mrs.','English','San Francisco','United States','','','','CA','101 Broadway St.','94111','','','Health1-00D9A000000EDdK','Health1-00D9A000000EDdK','','','','','','','','','','','','True','','','','','');
+INSERT INTO "Account" VALUES(1,'','','','','(555) 123-4569','','','','False','','','','San Francisco','United States','','','','CA','101 Broadway St.','94111','1957-04-09','','','United States','False','','','','','False','False','','charles.green@example.com','','','False','','','NonDual','False','Charles','','Male','','','0012393275617476591683030464239','Individual','Individual','','False','Green','','False','San Francisco','United States','','','','CA','101 Broadway St.','94111','','False','','','','','','','','','','','','','','','','','','','','English','','0129A000003BPFlQAO','Mr.','English','San Francisco','United States','','','','CA','101 Broadway St.','94111','','','Health1-00D9A000000EDdK','Health1-00D9A000000EDdK','','','','','','','','','','','True','','','','','');
+INSERT INTO "Account" VALUES(2,'','','','','','','','','','','False','','','','San Francisco','United States','','','','CA','101 Broadway St.','94111','1959-09-28','','','United States','False','','','','','False','False','','shawna.green@example.com','','','False','','','NonDual','False','Shawna','','Female','','','0014622456009537131683030464240','Individual','Individual','','False','Green','','False','San Francisco','United States','','','','CA','101 Broadway St.','94111','','False','','','','','','','','','','','','','','','','','','','','English','','0129A000003BPFlQAO','Mrs.','English','San Francisco','United States','','','','CA','101 Broadway St.','94111','','','Health1-00D9A000000EDdK','Health1-00D9A000000EDdK','','','','','','','','','','','True','','','','','');
 CREATE TABLE "Account_rt_mapping" (
 	record_type_id VARCHAR(18) NOT NULL, 
 	developer_name VARCHAR(255), 
@@ -408,255 +408,255 @@ CREATE TABLE "CodeSet" (
 	"Name" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-CREATE TABLE "Contact" (
-	id INTEGER NOT NULL, 
-	"AssistantName" VARCHAR(255), 
-	"AssistantPhone" VARCHAR(255), 
-	"Birthdate" VARCHAR(255), 
-	"DeceasedDate" VARCHAR(255), 
-	"Department" VARCHAR(255), 
-	"Description" VARCHAR(255), 
-	"DoNotCall" VARCHAR(255), 
-	"Email" VARCHAR(255), 
-	"EmailBouncedDate" VARCHAR(255), 
-	"EmailBouncedReason" VARCHAR(255), 
-	"Fax" VARCHAR(255), 
-	"FirstName" VARCHAR(255), 
-	"Gender" VARCHAR(255), 
-	"GenderIdentity" VARCHAR(255), 
-	"HasOptedOutOfEmail" VARCHAR(255), 
-	"HasOptedOutOfFax" VARCHAR(255), 
-	"HealthCloudGA__ConditionStatus__c" VARCHAR(255), 
-	"HealthCloudGA__ConvertedReferrals__c" VARCHAR(255), 
-	"HealthCloudGA__CountryOfBirth__c" VARCHAR(255), 
-	"HealthCloudGA__CreatedFromLead__c" VARCHAR(255), 
-	"HealthCloudGA__DeceasedDate__c" VARCHAR(255), 
-	"HealthCloudGA__Gender__c" VARCHAR(255), 
-	"HealthCloudGA__IndividualType__c" VARCHAR(255), 
-	"HealthCloudGA__MedicalRecordNumber__c" VARCHAR(255), 
-	"HealthCloudGA__Monitored_at_Home__c" VARCHAR(255), 
-	"HealthCloudGA__PreferredName__c" VARCHAR(255), 
-	"HealthCloudGA__PrimaryLanguage__c" VARCHAR(255), 
-	"HealthCloudGA__SecondaryLanguage__c" VARCHAR(255), 
-	"HealthCloudGA__SourceSystemId__c" VARCHAR(255), 
-	"HealthCloudGA__SourceSystem__c" VARCHAR(255), 
-	"HealthCloudGA__StatusGroup__c" VARCHAR(255), 
-	"HealthCloudGA__Testing_Status__c" VARCHAR(255), 
-	"HealthCloudGA__TotalReferrals__c" VARCHAR(255), 
-	"HomePhone" VARCHAR(255), 
-	"Jigsaw" VARCHAR(255), 
-	"LastName" VARCHAR(255), 
-	"LeadSource" VARCHAR(255), 
-	"MailingCity" VARCHAR(255), 
-	"MailingCountry" VARCHAR(255), 
-	"MailingGeocodeAccuracy" VARCHAR(255), 
-	"MailingLatitude" VARCHAR(255), 
-	"MailingLongitude" VARCHAR(255), 
-	"MailingPostalCode" VARCHAR(255), 
-	"MailingState" VARCHAR(255), 
-	"MailingStreet" VARCHAR(255), 
-	"MaritalStatus" VARCHAR(255), 
-	"MobilePhone" VARCHAR(255), 
-	"OtherCity" VARCHAR(255), 
-	"OtherCountry" VARCHAR(255), 
-	"OtherGeocodeAccuracy" VARCHAR(255), 
-	"OtherLatitude" VARCHAR(255), 
-	"OtherLongitude" VARCHAR(255), 
-	"OtherPhone" VARCHAR(255), 
-	"OtherPostalCode" VARCHAR(255), 
-	"OtherState" VARCHAR(255), 
-	"OtherStreet" VARCHAR(255), 
-	"Phone" VARCHAR(255), 
-	"Pronouns" VARCHAR(255), 
-	"Salutation" VARCHAR(255), 
-	"SequenceInMultipleBirth" VARCHAR(255), 
-	"Title" VARCHAR(255), 
-	"IsPersonAccount" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "Contact" VALUES(1,'','','1957-04-09','','','','False','charles.green@example.com','','','','Charles','Male','','False','False','','','United States','False','','','Individual','','','','English','English','','Health1-00D9A000000EDdK','','','','','','Green','','San Francisco','United States','','','','94111','CA','101 Broadway St.','','','','','','','','','','','','(555) 123-4569','','Mr.','','','True');
-INSERT INTO "Contact" VALUES(2,'','','1959-09-28','','','','False','shawna.green@example.com','','','','Shawna','Female','','False','False','','','United States','False','','','Individual','','','','English','English','','Health1-00D9A000000EDdK','','','','','','Green','','San Francisco','United States','','','','94111','CA','101 Broadway St.','','','','','','','','','','','','','','Mrs.','','','True');
-CREATE TABLE "FSL__Scheduling_Policy_Goal__c" (
-	id INTEGER NOT NULL, 
-	"FSL__Weight__c" VARCHAR(255), 
-	"FSL__Scheduling_Policy__c" VARCHAR(255), 
-	"FSL__Service_Goal__c" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(1,'4.0','3','1');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(2,'4.0','3','2');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(3,'2.0','3','3');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(4,'1.0','3','6');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(5,'4.0','1','1');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(6,'4.0','1','2');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(7,'2.0','1','3');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(8,'1.0','1','6');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(9,'1.0','2','1');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(10,'2.0','2','2');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(11,'7.0','2','3');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(12,'10.0','5','1');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(13,'1.0','5','2');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(14,'1.0','5','5');
-INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(15,'1.0','5','6');
-CREATE TABLE "FSL__Scheduling_Policy_Work_Rule__c" (
-	id INTEGER NOT NULL, 
-	"FSL__Scheduling_Policy__c" VARCHAR(255), 
-	"FSL__Work_Rule__c" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(1,'1','2');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(2,'1','1');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(3,'2','2');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(4,'2','1');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(5,'3','2');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(6,'3','1');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(7,'4','2');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(8,'4','1');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(9,'2','3');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(10,'2','4');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(11,'2','5');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(12,'2','6');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(13,'2','8');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(14,'2','10');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(15,'2','11');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(16,'2','13');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(17,'2','14');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(18,'1','3');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(19,'1','4');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(20,'1','5');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(21,'1','6');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(22,'1','8');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(23,'1','10');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(24,'1','11');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(25,'1','13');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(26,'1','14');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(27,'3','3');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(28,'3','4');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(29,'3','5');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(30,'3','8');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(31,'3','10');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(32,'3','11');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(33,'3','13');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(34,'3','14');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(35,'4','3');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(36,'4','6');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(37,'4','8');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(38,'4','11');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(39,'5','2');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(40,'5','1');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(41,'5','3');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(42,'5','4');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(43,'5','5');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(44,'5','6');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(45,'5','7');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(46,'5','8');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(47,'5','10');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(48,'5','11');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(49,'5','13');
-INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(50,'5','14');
-CREATE TABLE "FSL__Scheduling_Policy__c" (
-	id INTEGER NOT NULL, 
-	"FSL__Commit_Mode__c" VARCHAR(255), 
-	"FSL__Description__c" VARCHAR(255), 
-	"FSL__Fix_Overlaps__c" VARCHAR(255), 
-	"FSL__Daily_Optimization__c" VARCHAR(255), 
-	"Name" VARCHAR(255), 
-	"FSL__Service_Clustering_Weight__c" VARCHAR(255), 
-	"FSL__Service_Priority_Weight__c" VARCHAR(255), 
-	"FSL__Travel_Mode__c" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "FSL__Scheduling_Policy__c" VALUES(1,'AlwaysCommit','This policy balances great customer service with travel minimization. Appointments are graded first by the customer\''s selection of a preferred employee and by the ability to provide the service as soon as possible. Travel minimization is considered as a second priority.','False','False','Customer First','','','False');
-INSERT INTO "FSL__Scheduling_Policy__c" VALUES(2,'AlwaysCommit','This policy is typically used in times of high service volumes, like a storm scenario, where the business is focusing on employee productivity first and customer preferences are considered as a second priority','False','False','High Intensity','','','False');
-INSERT INTO "FSL__Scheduling_Policy__c" VALUES(3,'AlwaysCommit','This policy is identical to the customer first policy, but allows the sharing of employees between different territories in order to enhance service coverage','False','False','Soft Boundaries','','','False');
-INSERT INTO "FSL__Scheduling_Policy__c" VALUES(4,'AlwaysCommit','This policy is used in order to schedule emergencies from the emergency action','False','False','Emergency','','','False');
-INSERT INTO "FSL__Scheduling_Policy__c" VALUES(5,'AlwaysCommit','Displays the details of Home Health’s default scheduling policy, including work rules and objectives that can be customized as needed.','True','True','Home Health Default Scheduling Policy','','','False');
-CREATE TABLE "FSL__Service_Goal__c" (
-	id INTEGER NOT NULL, 
-	"FSL__Custom_Logic_Data__c" VARCHAR(255), 
-	"FSL__Custom_Type__c" VARCHAR(255), 
-	"FSL__Ignore_Home_Base_Coordinates__c" VARCHAR(255), 
-	"FSL__Object_Group_Field__c" VARCHAR(255), 
-	"FSL__Prioritize_Resource__c" VARCHAR(255), 
-	"RecordTypeId" VARCHAR(255), 
-	"FSL__Resource_Priority_Field__c" VARCHAR(255), 
-	"FSL__Resource_Group_Field__c" VARCHAR(255), 
-	"Name" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "FSL__Service_Goal__c" VALUES(1,'','','False','','Least Qualified','0129A000003BPFWQA4','fsl__priority__c','','Preferred Service Resource');
-INSERT INTO "FSL__Service_Goal__c" VALUES(2,'','','False','','Least Qualified','0129A000003BPFTQA4','fsl__priority__c','','ASAP');
-INSERT INTO "FSL__Service_Goal__c" VALUES(3,'','','False','','Least Qualified','0129A000003BPFSQA4','fsl__priority__c','','Minimize Travel');
-INSERT INTO "FSL__Service_Goal__c" VALUES(4,'','','False','','Least Qualified','0129A000003BPFRQA4','fsl__priority__c','','Minimize Overtime');
-INSERT INTO "FSL__Service_Goal__c" VALUES(5,'','','False','','Most Qualified','0129A000003BPFVQA4','fsl__priority__c','','Skill Level');
-INSERT INTO "FSL__Service_Goal__c" VALUES(6,'','','False','','Least Qualified','0129A000003BPFXQA4','priority__c','','Resource Priority');
-CREATE TABLE "FSL__Service_Goal__c_rt_mapping" (
-	record_type_id VARCHAR(18) NOT NULL, 
-	developer_name VARCHAR(255), 
-	PRIMARY KEY (record_type_id)
-);
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFRQA4','Objective_Minimize_Overtime');
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFSQA4','Objective_Minimize_Travel');
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFTQA4','Objective_Asap');
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFUQA4','Objective_Custom_Logic');
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFVQA4','Objective_Skill_Level');
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFWQA4','Objective_PreferredEngineer');
-INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFXQA4','Objective_Resource_Priority');
-CREATE TABLE "FSL__Work_Rule__c" (
-	id INTEGER NOT NULL, 
-	"FSL__Service_Schedule_Time_Property__c" VARCHAR(255), 
-	"FSL__Active__c" VARCHAR(255), 
-	"FSL__Boolean_Operator__c" VARCHAR(255), 
-	"FSL__Break_Duration__c" VARCHAR(255), 
-	"FSL__Break_Start__c" VARCHAR(255), 
-	"FSL__CountObject__c" VARCHAR(255), 
-	"FSL__CountTimeResolution__c" VARCHAR(255), 
-	"FSL__CountType__c" VARCHAR(255), 
-	"FSL__Crew_Resources_Availability__c" VARCHAR(255), 
-	"FSL__CustomFieldName__c" VARCHAR(255), 
-	"FSL__DefaultLimit__c" VARCHAR(255), 
-	"FSL__Description__c" VARCHAR(255), 
-	"FSL__Enable_Overtime__c" VARCHAR(255), 
-	"FSL__Enhanced_Match_Linking_Object__c" VARCHAR(255), 
-	"FSL__Is_Fixed_Gap__c" VARCHAR(255), 
-	"FSL__Match_Constant_Boolean_Value__c" VARCHAR(255), 
-	"FSL__Match_Skill_Level__c" VARCHAR(255), 
-	"FSL__Maximum_Travel_From_Home_Type__c" VARCHAR(255), 
-	"FSL__Maximum_Travel_From_Home__c" VARCHAR(255), 
-	"FSL__Minimum_Gap__c" VARCHAR(255), 
-	"FSL__Object_Group_Field__c" VARCHAR(255), 
-	"FSL__Pass_Empty_Values__c" VARCHAR(255), 
-	"FSL__Resource_Group_Field__c" VARCHAR(255), 
-	"FSL__Resource_Property__c" VARCHAR(255), 
-	"FSL__Service_Appointment_Matching_Field__c" VARCHAR(255), 
-	"FSL__Service_Linking_Object_Reference_Field__c" VARCHAR(255), 
-	"FSL__Service_Property__c" VARCHAR(255), 
-	"FSL__Service_Time_Operator__c" VARCHAR(255), 
-	"FSL__Service_Time_Property__c" VARCHAR(255), 
-	"FSL__Start_of_Day__c" VARCHAR(255), 
-	"FSL__Travel_From_Home__c" VARCHAR(255), 
-	"FSL__Travel_To_Home__c" VARCHAR(255), 
-	"FSL__WorkRule_End_DateTime_Field__c" VARCHAR(255), 
-	"FSL__WorkRule_Start_DateTime_Field__c" VARCHAR(255), 
-	"FSL__Working_Location_Enable_Primary__c" VARCHAR(255), 
-	"FSL__isTimephased__c" VARCHAR(255), 
-	"Name" VARCHAR(255), 
-	PRIMARY KEY (id)
-);
-INSERT INTO "FSL__Work_Rule__c" VALUES(1,'SchedEndTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Before or Equal to','DueDate','00:00','','','','','False','False','Due Date');
-INSERT INTO "FSL__Work_Rule__c" VALUES(2,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Later than or Equal to','EarliestStartTime','00:00','','','','','False','False','Earliest Start Permitted');
-INSERT INTO "FSL__Work_Rule__c" VALUES(3,'SchedStartTime','True','=','30.0','12:00','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','0.0','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','0.0','0.0','','','False','False','Resource Availability');
-INSERT INTO "FSL__Work_Rule__c" VALUES(4,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Required Service Resource');
-INSERT INTO "FSL__Work_Rule__c" VALUES(5,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','False','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Match Skills');
-INSERT INTO "FSL__Work_Rule__c" VALUES(6,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Match Territory');
-INSERT INTO "FSL__Work_Rule__c" VALUES(7,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Excluded Resources');
-INSERT INTO "FSL__Work_Rule__c" VALUES(8,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','IsActive','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Active Resources');
-INSERT INTO "FSL__Work_Rule__c" VALUES(9,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','50.0','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Maximum Travel From Home');
-INSERT INTO "FSL__Work_Rule__c" VALUES(10,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Service Appointment Visiting Hours');
-INSERT INTO "FSL__Work_Rule__c" VALUES(11,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Service Crew Resources Availability');
-INSERT INTO "FSL__Work_Rule__c" VALUES(12,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Working Territories');
-INSERT INTO "FSL__Work_Rule__c" VALUES(13,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Later than or Equal to','ArrivalWindowStartTime','00:00','','','','','False','False','Scheduled Start');
-INSERT INTO "FSL__Work_Rule__c" VALUES(14,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Before or Equal to','ArrivalWindowEndTime','00:00','','','','','False','False','Scheduled End');
+-- CREATE TABLE "Contact" (
+-- 	id INTEGER NOT NULL, 
+-- 	"AssistantName" VARCHAR(255), 
+-- 	"AssistantPhone" VARCHAR(255), 
+-- 	"Birthdate" VARCHAR(255), 
+-- 	"DeceasedDate" VARCHAR(255), 
+-- 	"Department" VARCHAR(255), 
+-- 	"Description" VARCHAR(255), 
+-- 	"DoNotCall" VARCHAR(255), 
+-- 	"Email" VARCHAR(255), 
+-- 	"EmailBouncedDate" VARCHAR(255), 
+-- 	"EmailBouncedReason" VARCHAR(255), 
+-- 	"Fax" VARCHAR(255), 
+-- 	"FirstName" VARCHAR(255), 
+-- 	"Gender" VARCHAR(255), 
+-- 	"GenderIdentity" VARCHAR(255), 
+-- 	"HasOptedOutOfEmail" VARCHAR(255), 
+-- 	"HasOptedOutOfFax" VARCHAR(255), 
+-- 	"HealthCloudGA__ConditionStatus__c" VARCHAR(255), 
+-- 	"HealthCloudGA__ConvertedReferrals__c" VARCHAR(255), 
+-- 	"HealthCloudGA__CountryOfBirth__c" VARCHAR(255), 
+-- 	"HealthCloudGA__CreatedFromLead__c" VARCHAR(255), 
+-- 	"HealthCloudGA__DeceasedDate__c" VARCHAR(255), 
+-- 	"HealthCloudGA__Gender__c" VARCHAR(255), 
+-- 	"HealthCloudGA__IndividualType__c" VARCHAR(255), 
+-- 	"HealthCloudGA__MedicalRecordNumber__c" VARCHAR(255), 
+-- 	"HealthCloudGA__Monitored_at_Home__c" VARCHAR(255), 
+-- 	"HealthCloudGA__PreferredName__c" VARCHAR(255), 
+-- 	"HealthCloudGA__PrimaryLanguage__c" VARCHAR(255), 
+-- 	"HealthCloudGA__SecondaryLanguage__c" VARCHAR(255), 
+-- 	"HealthCloudGA__SourceSystemId__c" VARCHAR(255), 
+-- 	"HealthCloudGA__SourceSystem__c" VARCHAR(255), 
+-- 	"HealthCloudGA__StatusGroup__c" VARCHAR(255), 
+-- 	"HealthCloudGA__Testing_Status__c" VARCHAR(255), 
+-- 	"HealthCloudGA__TotalReferrals__c" VARCHAR(255), 
+-- 	"HomePhone" VARCHAR(255), 
+-- 	"Jigsaw" VARCHAR(255), 
+-- 	"LastName" VARCHAR(255), 
+-- 	"LeadSource" VARCHAR(255), 
+-- 	"MailingCity" VARCHAR(255), 
+-- 	"MailingCountry" VARCHAR(255), 
+-- 	"MailingGeocodeAccuracy" VARCHAR(255), 
+-- 	"MailingLatitude" VARCHAR(255), 
+-- 	"MailingLongitude" VARCHAR(255), 
+-- 	"MailingPostalCode" VARCHAR(255), 
+-- 	"MailingState" VARCHAR(255), 
+-- 	"MailingStreet" VARCHAR(255), 
+-- 	"MaritalStatus" VARCHAR(255), 
+-- 	"MobilePhone" VARCHAR(255), 
+-- 	"OtherCity" VARCHAR(255), 
+-- 	"OtherCountry" VARCHAR(255), 
+-- 	"OtherGeocodeAccuracy" VARCHAR(255), 
+-- 	"OtherLatitude" VARCHAR(255), 
+-- 	"OtherLongitude" VARCHAR(255), 
+-- 	"OtherPhone" VARCHAR(255), 
+-- 	"OtherPostalCode" VARCHAR(255), 
+-- 	"OtherState" VARCHAR(255), 
+-- 	"OtherStreet" VARCHAR(255), 
+-- 	"Phone" VARCHAR(255), 
+-- 	"Pronouns" VARCHAR(255), 
+-- 	"Salutation" VARCHAR(255), 
+-- 	"SequenceInMultipleBirth" VARCHAR(255), 
+-- 	"Title" VARCHAR(255), 
+-- 	"IsPersonAccount" VARCHAR(255), 
+-- 	PRIMARY KEY (id)
+-- );
+-- INSERT INTO "Contact" VALUES(1,'','','1957-04-09','','','','False','charles.green@example.com','','','','Charles','Male','','False','False','','','United States','False','','','Individual','','','','English','English','','Health1-00D9A000000EDdK','','','','','','Green','','San Francisco','United States','','','','94111','CA','101 Broadway St.','','','','','','','','','','','','(555) 123-4569','','Mr.','','','True');
+-- INSERT INTO "Contact" VALUES(2,'','','1959-09-28','','','','False','shawna.green@example.com','','','','Shawna','Female','','False','False','','','United States','False','','','Individual','','','','English','English','','Health1-00D9A000000EDdK','','','','','','Green','','San Francisco','United States','','','','94111','CA','101 Broadway St.','','','','','','','','','','','','','','Mrs.','','','True');
+-- CREATE TABLE "FSL__Scheduling_Policy_Goal__c" (
+-- 	id INTEGER NOT NULL, 
+-- 	"FSL__Weight__c" VARCHAR(255), 
+-- 	"FSL__Scheduling_Policy__c" VARCHAR(255), 
+-- 	"FSL__Service_Goal__c" VARCHAR(255), 
+-- 	PRIMARY KEY (id)
+-- );
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(1,'4.0','3','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(2,'4.0','3','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(3,'2.0','3','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(4,'1.0','3','6');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(5,'4.0','1','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(6,'4.0','1','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(7,'2.0','1','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(8,'1.0','1','6');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(9,'1.0','2','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(10,'2.0','2','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(11,'7.0','2','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(12,'10.0','5','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(13,'1.0','5','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(14,'1.0','5','5');
+-- INSERT INTO "FSL__Scheduling_Policy_Goal__c" VALUES(15,'1.0','5','6');
+-- CREATE TABLE "FSL__Scheduling_Policy_Work_Rule__c" (
+-- 	id INTEGER NOT NULL, 
+-- 	"FSL__Scheduling_Policy__c" VARCHAR(255), 
+-- 	"FSL__Work_Rule__c" VARCHAR(255), 
+-- 	PRIMARY KEY (id)
+-- );
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(1,'1','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(2,'1','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(3,'2','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(4,'2','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(5,'3','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(6,'3','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(7,'4','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(8,'4','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(9,'2','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(10,'2','4');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(11,'2','5');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(12,'2','6');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(13,'2','8');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(14,'2','10');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(15,'2','11');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(16,'2','13');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(17,'2','14');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(18,'1','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(19,'1','4');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(20,'1','5');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(21,'1','6');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(22,'1','8');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(23,'1','10');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(24,'1','11');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(25,'1','13');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(26,'1','14');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(27,'3','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(28,'3','4');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(29,'3','5');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(30,'3','8');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(31,'3','10');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(32,'3','11');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(33,'3','13');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(34,'3','14');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(35,'4','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(36,'4','6');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(37,'4','8');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(38,'4','11');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(39,'5','2');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(40,'5','1');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(41,'5','3');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(42,'5','4');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(43,'5','5');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(44,'5','6');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(45,'5','7');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(46,'5','8');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(47,'5','10');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(48,'5','11');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(49,'5','13');
+-- INSERT INTO "FSL__Scheduling_Policy_Work_Rule__c" VALUES(50,'5','14');
+-- CREATE TABLE "FSL__Scheduling_Policy__c" (
+-- 	id INTEGER NOT NULL, 
+-- 	"FSL__Commit_Mode__c" VARCHAR(255), 
+-- 	"FSL__Description__c" VARCHAR(255), 
+-- 	"FSL__Fix_Overlaps__c" VARCHAR(255), 
+-- 	"FSL__Daily_Optimization__c" VARCHAR(255), 
+-- 	"Name" VARCHAR(255), 
+-- 	"FSL__Service_Clustering_Weight__c" VARCHAR(255), 
+-- 	"FSL__Service_Priority_Weight__c" VARCHAR(255), 
+-- 	"FSL__Travel_Mode__c" VARCHAR(255), 
+-- 	PRIMARY KEY (id)
+-- );
+-- INSERT INTO "FSL__Scheduling_Policy__c" VALUES(1,'AlwaysCommit','This policy balances great customer service with travel minimization. Appointments are graded first by the customer\''s selection of a preferred employee and by the ability to provide the service as soon as possible. Travel minimization is considered as a second priority.','False','False','Customer First','','','False');
+-- INSERT INTO "FSL__Scheduling_Policy__c" VALUES(2,'AlwaysCommit','This policy is typically used in times of high service volumes, like a storm scenario, where the business is focusing on employee productivity first and customer preferences are considered as a second priority','False','False','High Intensity','','','False');
+-- INSERT INTO "FSL__Scheduling_Policy__c" VALUES(3,'AlwaysCommit','This policy is identical to the customer first policy, but allows the sharing of employees between different territories in order to enhance service coverage','False','False','Soft Boundaries','','','False');
+-- INSERT INTO "FSL__Scheduling_Policy__c" VALUES(4,'AlwaysCommit','This policy is used in order to schedule emergencies from the emergency action','False','False','Emergency','','','False');
+-- INSERT INTO "FSL__Scheduling_Policy__c" VALUES(5,'AlwaysCommit','Displays the details of Home Health’s default scheduling policy, including work rules and objectives that can be customized as needed.','True','True','Home Health Default Scheduling Policy','','','False');
+-- CREATE TABLE "FSL__Service_Goal__c" (
+-- 	id INTEGER NOT NULL, 
+-- 	"FSL__Custom_Logic_Data__c" VARCHAR(255), 
+-- 	"FSL__Custom_Type__c" VARCHAR(255), 
+-- 	"FSL__Ignore_Home_Base_Coordinates__c" VARCHAR(255), 
+-- 	"FSL__Object_Group_Field__c" VARCHAR(255), 
+-- 	"FSL__Prioritize_Resource__c" VARCHAR(255), 
+-- 	"RecordTypeId" VARCHAR(255), 
+-- 	"FSL__Resource_Priority_Field__c" VARCHAR(255), 
+-- 	"FSL__Resource_Group_Field__c" VARCHAR(255), 
+-- 	"Name" VARCHAR(255), 
+-- 	PRIMARY KEY (id)
+-- );
+-- INSERT INTO "FSL__Service_Goal__c" VALUES(1,'','','False','','Least Qualified','0129A000003BPFWQA4','fsl__priority__c','','Preferred Service Resource');
+-- INSERT INTO "FSL__Service_Goal__c" VALUES(2,'','','False','','Least Qualified','0129A000003BPFTQA4','fsl__priority__c','','ASAP');
+-- INSERT INTO "FSL__Service_Goal__c" VALUES(3,'','','False','','Least Qualified','0129A000003BPFSQA4','fsl__priority__c','','Minimize Travel');
+-- INSERT INTO "FSL__Service_Goal__c" VALUES(4,'','','False','','Least Qualified','0129A000003BPFRQA4','fsl__priority__c','','Minimize Overtime');
+-- INSERT INTO "FSL__Service_Goal__c" VALUES(5,'','','False','','Most Qualified','0129A000003BPFVQA4','fsl__priority__c','','Skill Level');
+-- INSERT INTO "FSL__Service_Goal__c" VALUES(6,'','','False','','Least Qualified','0129A000003BPFXQA4','priority__c','','Resource Priority');
+-- CREATE TABLE "FSL__Service_Goal__c_rt_mapping" (
+-- 	record_type_id VARCHAR(18) NOT NULL, 
+-- 	developer_name VARCHAR(255), 
+-- 	PRIMARY KEY (record_type_id)
+-- );
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFRQA4','Objective_Minimize_Overtime');
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFSQA4','Objective_Minimize_Travel');
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFTQA4','Objective_Asap');
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFUQA4','Objective_Custom_Logic');
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFVQA4','Objective_Skill_Level');
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFWQA4','Objective_PreferredEngineer');
+-- INSERT INTO "FSL__Service_Goal__c_rt_mapping" VALUES('0129A000003BPFXQA4','Objective_Resource_Priority');
+-- CREATE TABLE "FSL__Work_Rule__c" (
+-- 	id INTEGER NOT NULL, 
+-- 	"FSL__Service_Schedule_Time_Property__c" VARCHAR(255), 
+-- 	"FSL__Active__c" VARCHAR(255), 
+-- 	"FSL__Boolean_Operator__c" VARCHAR(255), 
+-- 	"FSL__Break_Duration__c" VARCHAR(255), 
+-- 	"FSL__Break_Start__c" VARCHAR(255), 
+-- 	"FSL__CountObject__c" VARCHAR(255), 
+-- 	"FSL__CountTimeResolution__c" VARCHAR(255), 
+-- 	"FSL__CountType__c" VARCHAR(255), 
+-- 	"FSL__Crew_Resources_Availability__c" VARCHAR(255), 
+-- 	"FSL__CustomFieldName__c" VARCHAR(255), 
+-- 	"FSL__DefaultLimit__c" VARCHAR(255), 
+-- 	"FSL__Description__c" VARCHAR(255), 
+-- 	"FSL__Enable_Overtime__c" VARCHAR(255), 
+-- 	"FSL__Enhanced_Match_Linking_Object__c" VARCHAR(255), 
+-- 	"FSL__Is_Fixed_Gap__c" VARCHAR(255), 
+-- 	"FSL__Match_Constant_Boolean_Value__c" VARCHAR(255), 
+-- 	"FSL__Match_Skill_Level__c" VARCHAR(255), 
+-- 	"FSL__Maximum_Travel_From_Home_Type__c" VARCHAR(255), 
+-- 	"FSL__Maximum_Travel_From_Home__c" VARCHAR(255), 
+-- 	"FSL__Minimum_Gap__c" VARCHAR(255), 
+-- 	"FSL__Object_Group_Field__c" VARCHAR(255), 
+-- 	"FSL__Pass_Empty_Values__c" VARCHAR(255), 
+-- 	"FSL__Resource_Group_Field__c" VARCHAR(255), 
+-- 	"FSL__Resource_Property__c" VARCHAR(255), 
+-- 	"FSL__Service_Appointment_Matching_Field__c" VARCHAR(255), 
+-- 	"FSL__Service_Linking_Object_Reference_Field__c" VARCHAR(255), 
+-- 	"FSL__Service_Property__c" VARCHAR(255), 
+-- 	"FSL__Service_Time_Operator__c" VARCHAR(255), 
+-- 	"FSL__Service_Time_Property__c" VARCHAR(255), 
+-- 	"FSL__Start_of_Day__c" VARCHAR(255), 
+-- 	"FSL__Travel_From_Home__c" VARCHAR(255), 
+-- 	"FSL__Travel_To_Home__c" VARCHAR(255), 
+-- 	"FSL__WorkRule_End_DateTime_Field__c" VARCHAR(255), 
+-- 	"FSL__WorkRule_Start_DateTime_Field__c" VARCHAR(255), 
+-- 	"FSL__Working_Location_Enable_Primary__c" VARCHAR(255), 
+-- 	"FSL__isTimephased__c" VARCHAR(255), 
+-- 	"Name" VARCHAR(255), 
+-- 	PRIMARY KEY (id)
+-- );
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(1,'SchedEndTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Before or Equal to','DueDate','00:00','','','','','False','False','Due Date');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(2,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Later than or Equal to','EarliestStartTime','00:00','','','','','False','False','Earliest Start Permitted');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(3,'SchedStartTime','True','=','30.0','12:00','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','0.0','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','0.0','0.0','','','False','False','Resource Availability');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(4,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Required Service Resource');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(5,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','False','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Match Skills');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(6,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Match Territory');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(7,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Excluded Resources');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(8,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','IsActive','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Active Resources');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(9,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','50.0','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Maximum Travel From Home');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(10,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Service Appointment Visiting Hours');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(11,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Service Crew Resources Availability');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(12,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','False','','','','','ServiceTerritory','Before','EarliestStartTime','00:00','','','','','False','False','Working Territories');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(13,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Later than or Equal to','ArrivalWindowStartTime','00:00','','','','','False','False','Scheduled Start');
+-- INSERT INTO "FSL__Work_Rule__c" VALUES(14,'SchedStartTime','True','=','','','ServiceAppointment','Daily','Assignments','False','','','','False','','False','True','True','Distance','','','','True','','','','','ServiceTerritory','Before or Equal to','ArrivalWindowEndTime','00:00','','','','','False','False','Scheduled End');
 CREATE TABLE "HealthCareProcedure" (
 	id INTEGER NOT NULL, 
 	"Name" VARCHAR(255), 

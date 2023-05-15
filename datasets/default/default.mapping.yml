@@ -31,137 +31,137 @@ Insert OperatingHours:
   - Description
   - Name
   - TimeZone
-Insert Contact:
-  sf_object: Contact
-  table: Contact
-  fields:
-  - AssistantName
-  - AssistantPhone
-  - Birthdate
-  - DeceasedDate
-  - Department
-  - Description
-  - DoNotCall
-  - Email
-  - EmailBouncedDate
-  - EmailBouncedReason
-  - Fax
-  - FirstName
-  - Gender
-  - GenderIdentity
-  - HasOptedOutOfEmail
-  - HasOptedOutOfFax
-  - HealthCloudGA__ConditionStatus__c
-  - HealthCloudGA__ConvertedReferrals__c
-  - HealthCloudGA__CountryOfBirth__c
-  - HealthCloudGA__CreatedFromLead__c
-  - HealthCloudGA__DeceasedDate__c
-  - HealthCloudGA__Gender__c
-  - HealthCloudGA__IndividualType__c
-  - HealthCloudGA__MedicalRecordNumber__c
-  - HealthCloudGA__Monitored_at_Home__c
-  - HealthCloudGA__PreferredName__c
-  - HealthCloudGA__PrimaryLanguage__c
-  - HealthCloudGA__SecondaryLanguage__c
-  - HealthCloudGA__SourceSystemId__c
-  - HealthCloudGA__SourceSystem__c
-  - HealthCloudGA__StatusGroup__c
-  - HealthCloudGA__Testing_Status__c
-  - HealthCloudGA__TotalReferrals__c
-  - HomePhone
-  - Jigsaw
-  - LastName
-  - LeadSource
-  - MailingCity
-  - MailingCountry
-  - MailingGeocodeAccuracy
-  - MailingLatitude
-  - MailingLongitude
-  - MailingPostalCode
-  - MailingState
-  - MailingStreet
-  - MaritalStatus
-  - MobilePhone
-  - OtherCity
-  - OtherCountry
-  - OtherGeocodeAccuracy
-  - OtherLatitude
-  - OtherLongitude
-  - OtherPhone
-  - OtherPostalCode
-  - OtherState
-  - OtherStreet
-  - Phone
-  - Pronouns
-  - Salutation
-  - SequenceInMultipleBirth
-  - Title
-Insert FSL__Scheduling_Policy__c:
-  sf_object: FSL__Scheduling_Policy__c
-  table: FSL__Scheduling_Policy__c
-  fields:
-  - FSL__Commit_Mode__c
-  - FSL__Description__c
-  - FSL__Fix_Overlaps__c
-  - FSL__Daily_Optimization__c
-  - Name
-  - FSL__Service_Clustering_Weight__c
-  - FSL__Service_Priority_Weight__c
-  - FSL__Travel_Mode__c
-Insert FSL__Work_Rule__c:
-  sf_object: FSL__Work_Rule__c
-  table: FSL__Work_Rule__c
-  fields:
-  - FSL__Service_Schedule_Time_Property__c
-  - FSL__Active__c
-  - FSL__Boolean_Operator__c
-  - FSL__Break_Duration__c
-  - FSL__Break_Start__c
-  - FSL__CountObject__c
-  - FSL__CountTimeResolution__c
-  - FSL__CountType__c
-  - FSL__Crew_Resources_Availability__c
-  - FSL__CustomFieldName__c
-  - FSL__DefaultLimit__c
-  - FSL__Description__c
-  - FSL__Enable_Overtime__c
-  - FSL__Enhanced_Match_Linking_Object__c
-  - FSL__Is_Fixed_Gap__c
-  - FSL__Match_Constant_Boolean_Value__c
-  - FSL__Match_Skill_Level__c
-  - FSL__Maximum_Travel_From_Home_Type__c
-  - FSL__Maximum_Travel_From_Home__c
-  - FSL__Minimum_Gap__c
-  - FSL__Object_Group_Field__c
-  - FSL__Pass_Empty_Values__c
-  - FSL__Resource_Group_Field__c
-  - FSL__Resource_Property__c
-  - FSL__Service_Appointment_Matching_Field__c
-  - FSL__Service_Linking_Object_Reference_Field__c
-  - FSL__Service_Property__c
-  - FSL__Service_Time_Operator__c
-  - FSL__Service_Time_Property__c
-  - FSL__Start_of_Day__c
-  - FSL__Travel_From_Home__c
-  - FSL__Travel_To_Home__c
-  - FSL__WorkRule_End_DateTime_Field__c
-  - FSL__WorkRule_Start_DateTime_Field__c
-  - FSL__Working_Location_Enable_Primary__c
-  - FSL__isTimephased__c
-  - Name
-Insert FSL__Service_Goal__c:
-  sf_object: FSL__Service_Goal__c
-  table: FSL__Service_Goal__c
-  fields:
-  - FSL__Custom_Logic_Data__c
-  - FSL__Custom_Type__c
-  - FSL__Ignore_Home_Base_Coordinates__c
-  - FSL__Object_Group_Field__c
-  - FSL__Prioritize_Resource__c
-  - FSL__Resource_Priority_Field__c
-  - FSL__Resource_Group_Field__c
-  - Name
-  - RecordTypeId
+# Insert Contact:
+#   sf_object: Contact
+#   table: Contact
+#   fields:
+#   - AssistantName
+#   - AssistantPhone
+#   - Birthdate
+#   # - DeceasedDate
+#   - Department
+#   - Description
+#   # - DoNotCall
+#   - Email
+#   - EmailBouncedDate
+#   - EmailBouncedReason
+#   - Fax
+#   - FirstName
+#   # - Gender
+#   # - GenderIdentity
+#   # - HasOptedOutOfEmail
+#   # - HasOptedOutOfFax
+#   - HealthCloudGA__ConditionStatus__c
+#   - HealthCloudGA__ConvertedReferrals__c
+#   - HealthCloudGA__CountryOfBirth__c
+#   - HealthCloudGA__CreatedFromLead__c
+#   - HealthCloudGA__DeceasedDate__c
+#   - HealthCloudGA__Gender__c
+#   - HealthCloudGA__IndividualType__c
+#   - HealthCloudGA__MedicalRecordNumber__c
+#   - HealthCloudGA__Monitored_at_Home__c
+#   - HealthCloudGA__PreferredName__c
+#   - HealthCloudGA__PrimaryLanguage__c
+#   - HealthCloudGA__SecondaryLanguage__c
+#   - HealthCloudGA__SourceSystemId__c
+#   - HealthCloudGA__SourceSystem__c
+#   - HealthCloudGA__StatusGroup__c
+#   - HealthCloudGA__Testing_Status__c
+#   - HealthCloudGA__TotalReferrals__c
+#   - HomePhone
+#   - Jigsaw
+#   - LastName
+#   - LeadSource
+#   - MailingCity
+#   - MailingCountry
+#   - MailingGeocodeAccuracy
+#   - MailingLatitude
+#   - MailingLongitude
+#   - MailingPostalCode
+#   - MailingState
+#   - MailingStreet
+#   # - MaritalStatus
+#   - MobilePhone
+#   - OtherCity
+#   - OtherCountry
+#   - OtherGeocodeAccuracy
+#   - OtherLatitude
+#   - OtherLongitude
+#   - OtherPhone
+#   - OtherPostalCode
+#   - OtherState
+#   - OtherStreet
+#   - Phone
+#   # - Pronouns
+#   - Salutation
+#   # - SequenceInMultipleBirth
+#   - Title
+# Insert FSL__Scheduling_Policy__c:
+#   sf_object: FSL__Scheduling_Policy__c
+#   table: FSL__Scheduling_Policy__c
+#   fields:
+#   - FSL__Commit_Mode__c
+#   - FSL__Description__c
+#   - FSL__Fix_Overlaps__c
+#   - FSL__Daily_Optimization__c
+#   - Name
+#   - FSL__Service_Clustering_Weight__c
+#   - FSL__Service_Priority_Weight__c
+#   - FSL__Travel_Mode__c
+# Insert FSL__Work_Rule__c:
+#   sf_object: FSL__Work_Rule__c
+#   table: FSL__Work_Rule__c
+#   fields:
+#   - FSL__Service_Schedule_Time_Property__c
+#   - FSL__Active__c
+#   - FSL__Boolean_Operator__c
+#   - FSL__Break_Duration__c
+#   - FSL__Break_Start__c
+#   - FSL__CountObject__c
+#   - FSL__CountTimeResolution__c
+#   - FSL__CountType__c
+#   - FSL__Crew_Resources_Availability__c
+#   - FSL__CustomFieldName__c
+#   - FSL__DefaultLimit__c
+#   - FSL__Description__c
+#   - FSL__Enable_Overtime__c
+#   - FSL__Enhanced_Match_Linking_Object__c
+#   - FSL__Is_Fixed_Gap__c
+#   - FSL__Match_Constant_Boolean_Value__c
+#   - FSL__Match_Skill_Level__c
+#   - FSL__Maximum_Travel_From_Home_Type__c
+#   - FSL__Maximum_Travel_From_Home__c
+#   - FSL__Minimum_Gap__c
+#   - FSL__Object_Group_Field__c
+#   - FSL__Pass_Empty_Values__c
+#   - FSL__Resource_Group_Field__c
+#   - FSL__Resource_Property__c
+#   - FSL__Service_Appointment_Matching_Field__c
+#   - FSL__Service_Linking_Object_Reference_Field__c
+#   - FSL__Service_Property__c
+#   - FSL__Service_Time_Operator__c
+#   - FSL__Service_Time_Property__c
+#   - FSL__Start_of_Day__c
+#   - FSL__Travel_From_Home__c
+#   - FSL__Travel_To_Home__c
+#   - FSL__WorkRule_End_DateTime_Field__c
+#   - FSL__WorkRule_Start_DateTime_Field__c
+#   - FSL__Working_Location_Enable_Primary__c
+#   - FSL__isTimephased__c
+#   - Name
+# Insert FSL__Service_Goal__c:
+#   sf_object: FSL__Service_Goal__c
+#   table: FSL__Service_Goal__c
+#   fields:
+#   - FSL__Custom_Logic_Data__c
+#   - FSL__Custom_Type__c
+#   - FSL__Ignore_Home_Base_Coordinates__c
+#   - FSL__Object_Group_Field__c
+#   - FSL__Prioritize_Resource__c
+#   - FSL__Resource_Priority_Field__c
+#   - FSL__Resource_Group_Field__c
+#   - Name
+#   - RecordTypeId
 Insert Asset:
   sf_object: Asset
   table: Asset
@@ -285,8 +285,8 @@ Insert Account:
   - Name
   - AccountNumber
   - Phone
-  - Rating
-  - Site
+  # - Rating
+  # - Site
   - AccountSource
   - Type
   - HealthCloudGA__Active__c
@@ -312,20 +312,20 @@ Insert Account:
   - PersonDeceasedDate
   - PersonDepartment
   - HealthCloudGA__Disabled__c
-  - PersonDoNotCall
+  # - PersonDoNotCall
   - EffectiveDate
   - PersonEmail
   - PersonEmailBouncedDate
   - PersonEmailBouncedReason
-  - PersonHasOptedOutOfEmail
+  # - PersonHasOptedOutOfEmail
   - NumberOfEmployees
   - EndDate
   - HealthCloudGA__EnrollmentType__c
-  - PersonHasOptedOutOfFax
+  # - PersonHasOptedOutOfFax
   - FirstName
   - HealthCloudGA__Gender__pc
   - PersonGender
-  - PersonGenderIdentity
+  # - PersonGenderIdentity
   - PersonHomePhone
   - HealthCloudGA__IndividualId__c
   - HealthCloudGA__IndividualType__c
@@ -365,7 +365,7 @@ Insert Account:
   - HealthCloudGA__PayerType__c
   - HealthCloudGA__PreferredName__pc
   - HealthCloudGA__PrimaryLanguage__pc
-  - PersonPronouns
+  # - PersonPronouns
   - Salutation
   - HealthCloudGA__SecondaryLanguage__pc
   - ShippingCity
@@ -376,7 +376,7 @@ Insert Account:
   - ShippingState
   - ShippingStreet
   - ShippingPostalCode
-  - Sic
+  # - Sic
   - SicDesc
   - HealthCloudGA__SourceSystem__c
   - HealthCloudGA__SourceSystem__pc
@@ -387,7 +387,7 @@ Insert Account:
   - HealthCloudGA__StatusGroup__pc
   - HealthCloudGA__TaxId__c
   - HealthCloudGA__Testing_Status__pc
-  - TickerSymbol
+  # - TickerSymbol
   - PersonTitle
   - HealthCloudGA__TotalReferrals__pc
   - Website
@@ -406,31 +406,31 @@ Insert Account:
       table: Account
       key_field: ParentId
       after: Insert Account
-    HealthCloudGA__PrimaryContact__c:
-      table: Contact
-      key_field: HealthCloudGA__PrimaryContact__c
-Insert FSL__Scheduling_Policy_Goal__c:
-  sf_object: FSL__Scheduling_Policy_Goal__c
-  table: FSL__Scheduling_Policy_Goal__c
-  fields:
-  - FSL__Weight__c
-  lookups:
-    FSL__Service_Goal__c:
-      table: FSL__Service_Goal__c
-      key_field: FSL__Service_Goal__c
-    FSL__Scheduling_Policy__c:
-      table: FSL__Scheduling_Policy__c
-      key_field: FSL__Scheduling_Policy__c
-Insert FSL__Scheduling_Policy_Work_Rule__c:
-  sf_object: FSL__Scheduling_Policy_Work_Rule__c
-  table: FSL__Scheduling_Policy_Work_Rule__c
-  lookups:
-    FSL__Scheduling_Policy__c:
-      table: FSL__Scheduling_Policy__c
-      key_field: FSL__Scheduling_Policy__c
-    FSL__Work_Rule__c:
-      table: FSL__Work_Rule__c
-      key_field: FSL__Work_Rule__c
+    # HealthCloudGA__PrimaryContact__c:
+    #   table: Contact
+    #   key_field: HealthCloudGA__PrimaryContact__c
+# Insert FSL__Scheduling_Policy_Goal__c:
+#   sf_object: FSL__Scheduling_Policy_Goal__c
+#   table: FSL__Scheduling_Policy_Goal__c
+#   fields:
+#   - FSL__Weight__c
+#   lookups:
+#     FSL__Service_Goal__c:
+#       table: FSL__Service_Goal__c
+#       key_field: FSL__Service_Goal__c
+#     FSL__Scheduling_Policy__c:
+#       table: FSL__Scheduling_Policy__c
+#       key_field: FSL__Scheduling_Policy__c
+# Insert FSL__Scheduling_Policy_Work_Rule__c:
+#   sf_object: FSL__Scheduling_Policy_Work_Rule__c
+#   table: FSL__Scheduling_Policy_Work_Rule__c
+#   lookups:
+#     FSL__Scheduling_Policy__c:
+#       table: FSL__Scheduling_Policy__c
+#       key_field: FSL__Scheduling_Policy__c
+#     FSL__Work_Rule__c:
+#       table: FSL__Work_Rule__c
+#       key_field: FSL__Work_Rule__c
 Insert ServiceTerritory:
   sf_object: ServiceTerritory
   table: ServiceTerritory
@@ -504,11 +504,14 @@ Insert SkillRequirement:
   sf_object: SkillRequirement
   table: SkillRequirement
   fields:
-  - SkillLevel
   lookups:
     SkillId:
       table: Skill
       key_field: SkillId
+    RelatedRecordId:
+      table: 
+  soql_filter: "Skill.MasterLabel = 'Wound Management' OR Skill.MasterLabel = 'Physiotherapy' OR Skill.MasterLabel = 'Speech Therapy'"
+
 Insert WorkPlanTemplateEntry:
   sf_object: WorkPlanTemplateEntry
   table: WorkPlanTemplateEntry
@@ -810,7 +813,7 @@ Insert CareRequest:
   - SourceSystem
   - SourceSystemIdentifier
   - SourceSystemModified
-  - RecordTypeId
+  # - RecordTypeId
   lookups:
     AppointedRepresentativeId:
       table: Account
@@ -827,14 +830,14 @@ Insert CareRequest:
     ReferenceCareRequestCaseId:
       table: Case
       key_field: ReferenceCareRequestCaseId
-    GeneralPractitionerId:
-      table: Contact
-      key_field: GeneralPractitionerId
-    RequestingPractitionerId:
-      table: Contact
-      key_field: RequestingPractitionerId
-    ServicingPractitionerId:
-      table: Contact
+    # GeneralPractitionerId:
+    #   table: Contact
+    #   key_field: GeneralPractitionerId
+    # RequestingPractitionerId:
+    #   table: Contact
+    #   key_field: RequestingPractitionerId
+    # ServicingPractitionerId:
+    #   table: Contact
       key_field: ServicingPractitionerId
     MemberPrimaryPlanId:
       table: MemberPlan
@@ -903,7 +906,7 @@ Insert CareRequestItem:
   - SourceSystemModified
   - Status
   - StatusReason
-  - RecordTypeId
+  # - RecordTypeId
   lookups:
     TransportLocationId:
       table: Account

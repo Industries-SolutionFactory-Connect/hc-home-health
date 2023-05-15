@@ -1,0 +1,286 @@
+Insert Case:
+  sf_object: Case
+  table: Case
+  fields:
+  - Origin
+  - Priority
+  - Status
+  - Subject
+  - Type
+Insert OperatingHours:
+  sf_object: OperatingHours
+  table: OperatingHours
+  fields:
+  - Name
+  - TimeZone
+  soql_filter: "Name = 'Home Health San Francisco Operating Hours'"
+Insert FSL__Scheduling_Policy__c:
+  sf_object: FSL__Scheduling_Policy__c
+  table: FSL__Scheduling_Policy__c
+  fields:
+  - Name
+  soql_filter: "Name = 'Home Health Default Scheduling Policy'"
+Insert Location:
+  sf_object: Location
+  table: Location
+  fields:
+  - LocationType
+  - Name
+Insert SkillType:
+  sf_object: SkillType
+  table: SkillType
+  fields:
+  - DeveloperName
+  - MasterLabel
+  - Language
+Insert Skill:
+  sf_object: Skill
+  table: Skill
+  fields:
+  - DeveloperName
+  - Language
+  - MasterLabel
+  lookups:
+    TypeId: 
+      table: SkillType
+      key_field: TypeId
+Insert WorkPlanTemplate:
+  sf_object: WorkPlanTemplate
+  table: WorkPlanTemplate
+  fields:
+  - IsActive
+  - Name
+  - RelativeExecutionOrder
+Insert WorkStepTemplate:
+  sf_object: WorkStepTemplate
+  table: WorkStepTemplate
+  fields:
+  - IsActive
+  - Name
+Insert Account:
+  sf_object: Account
+  table: Account
+  fields:
+  - Name
+  - Phone
+  - BillingCity
+  - BillingCountry
+  - BillingState
+  - BillingStreet
+  - BillingPostalCode
+  - PersonBirthdate 
+  - PersonEmail
+  - FirstName
+  - HealthCloudGA__Gender__pc
+  - PersonGender 
+  - LastName
+  - PersonMailingCity
+  - PersonMailingCountry
+  - PersonMailingState
+  - PersonMailingStreet
+  - PersonMailingPostalCode 
+  - Salutation
+  - ShippingCity
+  - ShippingCountry
+  - ShippingState
+  - ShippingStreet
+  - ShippingPostalCode
+  - RecordTypeId
+  soql_filter: "Name = 'Charles Green' OR Name = 'Shawna Green'"
+Insert ServiceTerritory:
+  sf_object: ServiceTerritory
+  table: ServiceTerritory
+  fields:
+  - IsActive
+  - Name
+  lookups:
+    OperatingHoursId:
+      table: OperatingHours
+      key_field: OperatingHoursId
+Insert WorkType:
+  sf_object: WorkType
+  table: WorkType
+  fields:
+  - BlockTimeAfterUnit
+  - BlockTimeBeforeUnit
+  - DurationType
+  - EstimatedDuration
+  - Name
+  - TimeFrameEndUnit
+  - TimeFrameStartUnit
+Insert SkillRequirement:
+  sf_object: SkillRequirement
+  table: SkillRequirement
+  fields:
+  lookups:
+    SkillId:
+      table: Skill
+      key_field: SkillId
+    RelatedRecordId:
+      table: WorkType
+      key_field: RelatedRecordId
+  soql_filter: "RelatedRecord.Name = 'Physical Theraphy' OR RelatedRecord.Name = 'Speech Therapy' OR RelatedRecord.Name = 'Wound and Ostomy Care'"
+Insert WorkPlanTemplateEntry:
+  sf_object: WorkPlanTemplateEntry
+  table: WorkPlanTemplateEntry
+  fields:
+  - ExecutionOrder
+  lookups:
+    WorkPlanTemplateId:
+      table: WorkPlanTemplate
+      key_field: WorkPlanTemplateId
+    WorkStepTemplateId:
+      table: WorkStepTemplate
+      key_field: WorkStepTemplateId
+Insert TimeSlot:
+  sf_object: TimeSlot
+  table: TimeSlot
+  fields:
+  - DayOfWeek
+  - EndTime
+  - MaxAppointments
+  - StartTime
+  - Type
+  lookups:
+    OperatingHoursId:
+      table: OperatingHours
+      key_field: OperatingHoursId
+  soql_filter: "OperatingHours.Name = 'Home Health San Francisco Operating Hours'"
+Insert Assets:
+  sf_object: Asset
+  table: Asset
+  fields:
+    Name: Name
+  lookups:
+    AccountId:
+      table: Account
+Insert ServiceResource:
+  sf_object: ServiceResource
+  table: ServiceResource
+  fields:
+  - IsActive
+  - IsOptimizationCapable
+  - Name
+  - ResourceType
+  lookups:
+    AssetId:
+      table: Asset
+Insert ClinicalServiceRequest:
+  sf_object: ClinicalServiceRequest
+  table: ClinicalServiceRequest
+  fields:
+  - QuantityNumerator
+  - QuantityType
+  - Status
+  - Type
+  lookups:
+    PatientId:
+      table: Account
+      key_field: PatientId
+Insert ServiceTerritoryLocation:
+  sf_object: ServiceTerritoryLocation
+  table: ServiceTerritoryLocation
+  lookups:
+    LocationId:
+      table: Location
+      key_field: LocationId
+    ServiceTerritoryId:
+      table: ServiceTerritory
+      key_field: ServiceTerritoryId
+Insert AssociatedLocation:
+  sf_object: AssociatedLocation
+  table: AssociatedLocation
+  fields:
+  - ActiveFrom
+  lookups:
+    ParentRecordId:
+      table: Account
+      key_field: ParentRecordId
+    LocationId:
+      table: Location
+      key_field: LocationId
+Insert WorkPlanSelectionRule:
+  sf_object: WorkPlanSelectionRule
+  table: WorkPlanSelectionRule
+  fields:
+  - IsActive
+  lookups:
+    ServiceTerritoryId:
+      table: ServiceTerritory
+      key_field: ServiceTerritoryId
+    WorkPlanTemplateId:
+      table: WorkPlanTemplate
+      key_field: WorkPlanTemplateId
+    WorkTypeId:
+      table: WorkType
+      key_field: WorkTypeId
+    LocationId:
+      table: Location
+      key_field: LocationId
+Insert ServiceTerritoryMember:
+  sf_object: ServiceTerritoryMember
+  table: ServiceTerritoryMember
+  fields:
+  - EffectiveStartDate
+  - TerritoryType
+  lookups:
+    ServiceResourceId:
+      table: ServiceResource
+      key_field: ServiceResourceId
+    ServiceTerritoryId:
+      table: ServiceTerritory
+      key_field: ServiceTerritoryId
+Insert ServiceResourceSkill:
+  sf_object: ServiceResourceSkill
+  table: ServiceResourceSkill
+  fields:
+  - EffectiveStartDate
+  lookups:
+    ServiceResourceId:
+      table: ServiceResource
+      key_field: ServiceResourceId
+    SkillId:
+      table: Skill
+      key_field: SkillId
+Insert CareRequest:
+  sf_object: CareRequest
+  table: CareRequest
+  fields: 
+  - MemberFirstName
+  - MemberLastName
+  - Name
+  - RecordTypeId
+  lookups:
+    CareRequestCaseId:
+      table: Case
+      key_field: CareRequestCaseId
+Insert CareRequestItem:
+  sf_object: CareRequestItem
+  table: CareRequestItem
+  fields:
+  - ApprovedQuantity
+  - DeniedQuantity
+  - Name
+  - RecordTypeId
+  lookups:
+    CareRequestId:
+      table: CareRequest
+      key_field: CareRequestId
+    CareRequestCaseId:
+      table: Case
+      key_field: CareRequestCaseId
+    ClinicalServiceRequestId:
+      table: ClinicalServiceRequest
+      key_field: ClinicalServiceRequestId
+Insert ClinicalServiceRequestDetail:
+  sf_object: ClinicalServiceRequestDetail
+  table: ClinicalServiceRequestDetail
+  fields:
+  - DetailType
+  lookups:
+    ClinicalServiceRequestId:
+      table: ClinicalServiceRequest
+      key_field: ClinicalServiceRequestId
+    DetailRecordId:
+      table: WorkType
+      key_field: DetailRecordId
