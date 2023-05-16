@@ -19,6 +19,12 @@
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
-    }
+    },
+    "industriesSettings":{
+      "enableHomeHealth": true
+    },
+    "fieldServiceSettings":{
+      "fieldServiceOrgPref": true
+   }
   }
 }

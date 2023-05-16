@@ -1,0 +1,11 @@
+- snowfakery_version: 3
+- plugin: snowfakery.standard_plugins.Salesforce.SalesforceQuery
+- object: ServiceResource 
+  fields:
+    Name: Kevin Smith
+    ResourceType: 'T'
+    AssetId: ''
+    RelatedRecordId:
+      SalesforceQuery.find_record:
+        from: User
+        where: Name = 'Kevin Smith'

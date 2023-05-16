@@ -1,0 +1,48 @@
+- plugin: snowfakery.standard_plugins.Salesforce
+- plugin: snowfakery.standard_plugins.UniqueId
+- plugin: snowfakery.standard_plugins.Salesforce.SalesforceQuery
+- object: User 
+  count: 1
+  fields: 
+    FirstName: Sarah  
+    LastName: Brown
+    Username: 
+      fake: Username
+    Email: sarah.brown@example.com
+    Alias: SBrow
+    TimeZoneSidKey: America/Los_Angeles
+    LocaleSidKey: en_US
+    EmailEncodingKey: UTF-8
+    LanguageLocaleKey: en_US
+    ProfileId: 
+     Salesforce.ProfileId: Standard User  
+- object: User 
+  count: 1
+  fields: 
+    FirstName: Gracia  
+    LastName: Miller
+    Username: 
+      fake: Username
+    Email: gracia.miller@example.com
+    Alias: GMill
+    TimeZoneSidKey: America/Los_Angeles
+    LocaleSidKey: en_US
+    EmailEncodingKey: UTF-8
+    LanguageLocaleKey: en_US
+    ProfileId: 
+     Salesforce.ProfileId: Standard User 
+- object: User 
+  count: 1
+  fields: 
+    FirstName: Kevin  
+    LastName: Smith
+    Username: 
+      fake: Username
+    Email: kevin.smith@example.com
+    Alias: KSmith
+    TimeZoneSidKey: America/Los_Angeles
+    LocaleSidKey: en_US
+    EmailEncodingKey: UTF-8
+    LanguageLocaleKey: en_US
+    ProfileId: 
+     Salesforce.ProfileId: Standard User
