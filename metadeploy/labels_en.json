@@ -1,7 +1,7 @@
 {
     "product": {
         "title": {
-            "message": "Health Cloud Home Health",
+            "message": "Home Health",
             "description": "name of product"
         },
         "short_description": {
@@ -9,13 +9,13 @@
             "description": "tagline of product"
         },
         "description": {
-            "message": "**About Home Health**\r\nHome Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
+            "message": "Home Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
             "description": "shown on product detail page (markdown)"
         }
     },
     "plan:install": {
         "title": {
-            "message": "Install Home Health Feature",
+            "message": "Base Plan",
             "description": "title of installation plan"
         },
         "preflight_message": {
@@ -117,7 +117,7 @@
     },
     "plan:data_flow": {
         "title": {
-            "message": "Install Business data",
+            "message": "Sample Data Plan",
             "description": "title of installation plan"
         },
         "preflight_message": {

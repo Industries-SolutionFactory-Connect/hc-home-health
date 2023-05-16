@@ -50,6 +50,8 @@ flows:
                 task: generate_and_load_from_yaml
                 options:
                     generator_yaml: snowfakery/user.recipe.yml
+                ui_options:
+                    name: Create three Users
             2:
                 task: load_dataset
                 options:
@@ -63,7 +65,7 @@ flows:
                     api_names: HomeHealthCustom,Field_Service_Resource_License,FieldServiceMobileStandardPermSet,Field_Service_Mobile_License
                     user_alias: SBrow,GMill,KSmith
                 ui_options:
-                    name: Assign Permission Set Home Health Custom,Health Cloud Foundation,Field Service Mobile License,Field Service Mobile Lightning SDK,Field Service Resource License, to User Sarah,Grace and Kevin
+                    name: Assign Permission Set Home Health Custom,Health Cloud Foundation,Field Service Mobile License,Field Service Mobile Lightning SDK,Field Service Resource License, to Users.
             4:
                 task: update_data
                 options:
@@ -94,12 +96,16 @@ flows:
                     object: FSL__Service_Goal__c
                     query: Select Id,Name from FSL__Service_Goal__c where Name IN ('Preferred Service Resource','ASAP','Skill Level','Resource Priority')
                     result_file: snowfakery/fsl_service_goal.csv
+                ui_options:
+                    name: Storing Work Service Goal Records in csv
             8:
                 task: query
                 options:
                     object: FSL__Work_Rule__c
                     query: Select Id,Name from FSL__Work_Rule__c where Name IN ('Resource Availability','Required Service Resource','Match Skills','Match Territory','Excluded Resources','Active Resources','Service Appointment Visiting Hours','Service Crew Resources Availability','Scheduled Start','Scheduled End')
                     result_file: snowfakery/fsl_work_rule.csv
+                ui_options:
+                    name: Storing Work Rule Records in csv
             9:
                 task: generate_and_load_from_yaml
                 options:
@@ -110,6 +116,8 @@ flows:
                 options:
                     objects : Asset
                     where: "Name = 'Conference Room A' OR Name = 'Conference Room B' OR Name = 'Conference Room C'"
+                ui_options:
+                    name: Deleting asset related data
             
 plans:
   install:
