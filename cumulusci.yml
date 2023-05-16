@@ -7,6 +7,7 @@ project:
         namespace: HealthCloudGA
     git:
         default_branch: 'main'
+        repo_url: https://github.com/Industries-SolutionFactory-Connect/hc-home-health
         prefix_feature: 'feature/'
         prefix_beta: 'beta/'
         prefix_release: 'release/'
