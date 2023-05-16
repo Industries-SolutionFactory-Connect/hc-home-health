@@ -1,0 +1,128 @@
+{
+    "product": {
+        "title": {
+            "message": "Health Cloud Home Health",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "<Edit Here>",
+            "description": "tagline of product"
+        },
+        "description": {
+            "message": "**About Home Health**\r\nHome Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
+            "description": "shown on product detail page (markdown)"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Install Home Health Feature",
+            "description": "title of installation plan"
+        },
+        "preflight_message": {
+            "message": "This will install metadata for Home Health Module in your org",
+            "description": "shown before user starts installation (markdown)"
+        },
+        "post_install_message": {
+            "message": "Thanks for installing Home Health Module.Please visit <mention> for any questions about Home Health",
+            "description": "shown after successful installation (markdown)"
+        }
+    },
+    "checks": {
+        "Home Health feature requires Person Accounts. Please activate the Person Accounts feature and try again.": {
+            "message": "Home Health feature requires Person Accounts. Please activate the Person Accounts feature and try again.",
+            "description": "shown if validation fails"
+        },
+        "You need ManageHomeHealthPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need ManageHomeHealthPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need FieldServiceMobilePsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need FieldServiceMobilePsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need FieldServiceSchedulingPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need FieldServiceSchedulingPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need FieldServiceStandardPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need FieldServiceStandardPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need FieldServiceDispatcherPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need FieldServiceDispatcherPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need HcHomeHealthCaregiverPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need HcHomeHealthCaregiverPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need HcHomeHealthClinicianPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need HcHomeHealthClinicianPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need HealthCloudPlatformPsl psl to use this solution. Contact your Account Executive to purchase licenses.": {
+            "message": "You need HealthCloudPlatformPsl psl to use this solution. Contact your Account Executive to purchase licenses.",
+            "description": "shown if validation fails"
+        },
+        "You need HealthCloudFoundation permission set to be assigned to the user to use this solution.": {
+            "message": "You need HealthCloudFoundation permission set to be assigned to the user to use this solution.",
+            "description": "shown if validation fails"
+        },
+        "You need ManageHomeHealthPsl permission set to be assigned to the user to use this solution.": {
+            "message": "You need ManageHomeHealthPsl permission set to be assigned to the user to use this solution.",
+            "description": "shown if validation fails"
+        }
+    },
+    "steps": {
+        "Enable Home Health and Field Service Settings for Health Cloud": {
+            "message": "Enable Home Health and Field Service Settings for Health Cloud",
+            "description": "title of installation step"
+        },
+        "Deploy Metadata": {
+            "message": "Deploy Metadata",
+            "description": "title of installation step"
+        },
+        "generate_and_load_from_yaml": {
+            "message": "generate_and_load_from_yaml",
+            "description": "title of installation step"
+        },
+        "Load Business Data": {
+            "message": "Load Business Data",
+            "description": "title of installation step"
+        },
+        "Assign Permission Set Home Health Custom,Health Cloud Foundation,Field Service Mobile License,Field Service Mobile Lightning SDK,Field Service Resource License, to User Sarah,Grace and Kevin": {
+            "message": "Assign Permission Set Home Health Custom,Health Cloud Foundation,Field Service Mobile License,Field Service Mobile Lightning SDK,Field Service Resource License, to User Sarah,Grace and Kevin",
+            "description": "title of installation step"
+        },
+        "Update Business Data for First Service Resource": {
+            "message": "Update Business Data for First Service Resource",
+            "description": "title of installation step"
+        },
+        "Update Business Data for Second Service Resource": {
+            "message": "Update Business Data for Second Service Resource",
+            "description": "title of installation step"
+        },
+        "Update Business Data for Third Service Resource": {
+            "message": "Update Business Data for Third Service Resource",
+            "description": "title of installation step"
+        },
+        "query": {
+            "message": "query",
+            "description": "title of installation step"
+        },
+        "delete_data": {
+            "message": "delete_data",
+            "description": "title of installation step"
+        }
+    },
+    "plan:data_flow": {
+        "title": {
+            "message": "Install Business data",
+            "description": "title of installation plan"
+        },
+        "preflight_message": {
+            "message": "This will install data for Home Health Module in your org",
+            "description": "shown before user starts installation (markdown)"
+        }
+    }
+}
