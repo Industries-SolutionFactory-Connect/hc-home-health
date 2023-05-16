@@ -51,7 +51,7 @@ flows:
                 options:
                     generator_yaml: snowfakery/user.recipe.yml
                 ui_options:
-                    name: Create three Users
+                    name: Create Users
             2:
                 task: load_dataset
                 options:
@@ -65,7 +65,7 @@ flows:
                     api_names: HomeHealthCustom,Field_Service_Resource_License,FieldServiceMobileStandardPermSet,Field_Service_Mobile_License
                     user_alias: SBrow,GMill,KSmith
                 ui_options:
-                    name: Assign Permission Set Home Health Custom,Health Cloud Foundation,Field Service Mobile License,Field Service Mobile Lightning SDK,Field Service Resource License, to Users.
+                    name: Assign Permission Set to the Users
             4:
                 task: update_data
                 options:
@@ -97,7 +97,7 @@ flows:
                     query: Select Id,Name from FSL__Service_Goal__c where Name IN ('Preferred Service Resource','ASAP','Skill Level','Resource Priority')
                     result_file: snowfakery/fsl_service_goal.csv
                 ui_options:
-                    name: Storing Work Service Goal Records in csv
+                    name: Query Service Objective data
             8:
                 task: query
                 options:
@@ -105,11 +105,13 @@ flows:
                     query: Select Id,Name from FSL__Work_Rule__c where Name IN ('Resource Availability','Required Service Resource','Match Skills','Match Territory','Excluded Resources','Active Resources','Service Appointment Visiting Hours','Service Crew Resources Availability','Scheduled Start','Scheduled End')
                     result_file: snowfakery/fsl_work_rule.csv
                 ui_options:
-                    name: Storing Work Rule Records in csv
+                    name: Query Work Rule Data
             9:
                 task: generate_and_load_from_yaml
                 options:
                     generator_yaml: snowfakery/schedulingPolicyGoalAndWorkRule.recipe.yml
+                ui_options:
+                    name: Load Related Data for Home Health Scheduling Policy
         # Deleting asset , as the actual usecase is assigning user to the service resource and service resource cannot be created without any asset or user in beggning.
             10:
                 task: delete_data
@@ -117,7 +119,7 @@ flows:
                     objects : Asset
                     where: "Name = 'Conference Room A' OR Name = 'Conference Room B' OR Name = 'Conference Room C'"
                 ui_options:
-                    name: Deleting asset related data
+                    name: Delete Temporary Assets
             
 plans:
   install:
