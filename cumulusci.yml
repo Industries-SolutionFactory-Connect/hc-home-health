@@ -64,7 +64,7 @@ flows:
                     api_names: HomeHealthCustom,Field_Service_Resource_License,FieldServiceMobileStandardPermSet,Field_Service_Mobile_License
                     user_alias: SBrow,GMill,KSmith
                 ui_options:
-                    name: Assign Permission Set Home Health Custom to User Sarah,Grace and Kevin
+                    name: Assign Permission Set Home Health Custom,Health Cloud Foundation,Field Service Mobile License,Field Service Mobile Lightning SDK,Field Service Resource License, to User Sarah,Grace and Kevin
             4:
                 task: update_data
                 options:
@@ -80,7 +80,7 @@ flows:
                     object: ServiceResource
                     where: "Name = 'Gracia Miller'"
                 ui_options:
-                    name: Update Business Data for First Service Resource
+                    name: Update Business Data for Second Service Resource
             6:
                 task: update_data
                 options:
@@ -88,18 +88,18 @@ flows:
                     object: ServiceResource
                     where: "Name = 'Kevin Smith'"
                 ui_options:
-                    name: Update Business Data for First Service Resource
+                    name: Update Business Data for Third Service Resource
             7:
                 task: query
                 options:
                     object: FSL__Service_Goal__c
-                    query: select Id,Name from FSL__Service_Goal__c where Name IN ('Preferred Service Resource','ASAP','Skill Level','Resource Priority')
+                    query: Select Id,Name from FSL__Service_Goal__c where Name IN ('Preferred Service Resource','ASAP','Skill Level','Resource Priority')
                     result_file: snowfakery/fsl_service_goal.csv
             8:
                 task: query
                 options:
                     object: FSL__Work_Rule__c
-                    query: select Id,Name from FSL__Work_Rule__c where Name in ('Resource Availability','Required Service Resource','Match Skills','Match Territory','Excluded Resources','Active Resources','Service Appointment Visiting Hours','Service Crew Resources Availability','Scheduled Start','Scheduled End')
+                    query: Select Id,Name from FSL__Work_Rule__c where Name IN ('Resource Availability','Required Service Resource','Match Skills','Match Territory','Excluded Resources','Active Resources','Service Appointment Visiting Hours','Service Crew Resources Availability','Scheduled Start','Scheduled End')
                     result_file: snowfakery/fsl_work_rule.csv
             9:
                 task: generate_and_load_from_yaml
