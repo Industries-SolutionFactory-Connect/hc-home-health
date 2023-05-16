@@ -1,7 +1,0 @@
-
-Insert FSL__Scheduling_Policy__c:
-  sf_object: FSL__Scheduling_Policy__c
-  table: FSL__Scheduling_Policy__c
-  fields:
-  - Name
-  soql_filter: "Name = 'Home Health Default Scheduling Policy'"
