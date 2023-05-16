@@ -5,11 +5,11 @@
             "description": "name of product"
         },
         "short_description": {
-            "message": "<Edit Here>",
+            "message": "Schedule home healthcare visits with Health Cloud",
             "description": "tagline of product"
         },
         "description": {
-            "message": "Home Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
+            "message": "Home Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.\r\n\r\n**Post Install Steps**: Follow the [document](https://salesforce.quip.com/oAbUAWMSlYBV) to manually configure Field Service Lightning Setting after installation.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
             "description": "shown on product detail page (markdown)"
         }
     },
@@ -112,6 +112,30 @@
         },
         "delete_data": {
             "message": "delete_data",
+            "description": "title of installation step"
+        },
+        "Create Users": {
+            "message": "Create Users",
+            "description": "title of installation step"
+        },
+        "Assign Permission Set to the Users": {
+            "message": "Assign Permission Set to the Users",
+            "description": "title of installation step"
+        },
+        "Query Service Objective data": {
+            "message": "Query Service Objective data",
+            "description": "title of installation step"
+        },
+        "Query Work Rule Data": {
+            "message": "Query Work Rule Data",
+            "description": "title of installation step"
+        },
+        "Load Related Data for Home Health Scheduling Policy": {
+            "message": "Load Related Data for Home Health Scheduling Policy",
+            "description": "title of installation step"
+        },
+        "Delete Temporary Assets": {
+            "message": "Delete Temporary Assets",
             "description": "title of installation step"
         }
     },
