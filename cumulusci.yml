@@ -1,11 +1,13 @@
-minimum_cumulusci_version: '3.74.0'
+minimum_cumulusci_version: '3.75.1'
 project:
     name: hc-home-health
     package:
         name: hc-home-health
         api_version: '58.0'
+        namespace: HealthCloudGA
     git:
         default_branch: 'main'
+        repo_url: https://github.com/Industries-SolutionFactory-Connect/hc-home-health
         prefix_feature: 'feature/'
         prefix_beta: 'beta/'
         prefix_release: 'release/'
@@ -26,3 +28,144 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+flows:
+    hh_metadata_setup:
+        steps:
+            1:
+              task: org_settings
+              options:
+                definition_file: orgs/dev.json
+              ui_options:
+                name: Enable Home Health and Field Service Settings for Health Cloud
+            2:
+                task: deploy
+                options:
+                    path: force-app/main/default/homehealthmetadata
+                    # namespace_inject: $project_config.project__package__namespace
+                ui_options:
+                    name: Deploy Metadata
+    hh_data_setup:
+        steps:
+            1:
+                task: generate_and_load_from_yaml
+                options:
+                    generator_yaml: snowfakery/user.recipe.yml
+            2:
+                task: load_dataset
+                options:
+                    mapping:  datasets/default/default.mapping_definitefields.yml
+                    sql_path: datasets/default/default.dataset3.sql
+                ui_options:
+                    name: Load Business Data
+            3:
+                task: assign_permission_sets
+                options:
+                    api_names: HomeHealthCustom,Field_Service_Resource_License,FieldServiceMobileStandardPermSet,Field_Service_Mobile_License
+                    user_alias: SBrow,GMill,KSmith
+                ui_options:
+                    name: Assign Permission Set Home Health Custom to User Sarah,Grace and Kevin
+            4:
+                task: update_data
+                options:
+                    recipe: snowfakery/updateServiceResource1.recipe.yml
+                    object: ServiceResource
+                    where: "Name = 'Sarah Brown'"
+                ui_options:
+                    name: Update Business Data for First Service Resource
+            5:
+                task: update_data
+                options:
+                    recipe: snowfakery/updateServiceResource2.recipe.yml
+                    object: ServiceResource
+                    where: "Name = 'Gracia Miller'"
+                ui_options:
+                    name: Update Business Data for First Service Resource
+            6:
+                task: update_data
+                options:
+                    recipe: snowfakery/updateServiceResource3.recipe.yml
+                    object: ServiceResource
+                    where: "Name = 'Kevin Smith'"
+                ui_options:
+                    name: Update Business Data for First Service Resource
+            7:
+                task: query
+                options:
+                    object: FSL__Service_Goal__c
+                    query: select Id,Name from FSL__Service_Goal__c where Name IN ('Preferred Service Resource','ASAP','Skill Level','Resource Priority')
+                    result_file: snowfakery/fsl_service_goal.csv
+            8:
+                task: query
+                options:
+                    object: FSL__Work_Rule__c
+                    query: select Id,Name from FSL__Work_Rule__c where Name in ('Resource Availability','Required Service Resource','Match Skills','Match Territory','Excluded Resources','Active Resources','Service Appointment Visiting Hours','Service Crew Resources Availability','Scheduled Start','Scheduled End')
+                    result_file: snowfakery/fsl_work_rule.csv
+            9:
+                task: generate_and_load_from_yaml
+                options:
+                    generator_yaml: snowfakery/schedulingPolicyGoalAndWorkRule.recipe.yml
+        # Deleting asset , as the actual usecase is assigning user to the service resource and service resource cannot be created without any asset or user in beggning.
+            10:
+                task: delete_data
+                options:
+                    objects : Asset
+                    where: "Name = 'Conference Room A' OR Name = 'Conference Room B' OR Name = 'Conference Room C'"
+            
+plans:
+  install:
+    slug: install
+    title: Install Home Health Feature
+    tier: primary
+    is_listed: True
+    preflight_message: "This will install metadata for Home Health Module in your org"
+    post_install_message: "Thanks for installing Home Health Module.Please visit <mention> for any questions about Home Health"
+    checks:
+      - when: "not org_config.is_person_accounts_enabled"
+        action: error
+        message: "Home Health feature requires Person Accounts. Please activate the Person Accounts feature and try again."
+      - when: "'ManageHomeHealthPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need ManageHomeHealthPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'FieldServiceMobilePsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need FieldServiceMobilePsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'FieldServiceSchedulingPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need FieldServiceSchedulingPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'FieldServiceStandardPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need FieldServiceStandardPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'FieldServiceDispatcherPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need FieldServiceDispatcherPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'HcHomeHealthCaregiverPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need HcHomeHealthCaregiverPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'HcHomeHealthClinicianPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need HcHomeHealthClinicianPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'HealthCloudPlatformPsl' not in tasks.get_available_permission_set_licenses()"
+        action: error
+        message: "You need HealthCloudPlatformPsl psl to use this solution. Contact your Account Executive to purchase licenses."
+      - when: "'HealthCloudFoundation' not in tasks.get_assigned_permission_sets()"
+        action: error
+        message: "You need HealthCloudFoundation permission set to be assigned to the user to use this solution."
+      - when: "'ManageHomeHealthPsl' not in tasks.get_assigned_permission_sets()"
+        action: error
+        message: "You need ManageHomeHealthPsl permission set to be assigned to the user to use this solution."
+    steps:
+      1:
+        flow: hh_metadata_setup
+  data_flow:
+    slug: data-flow
+    title: Install Business data
+    tier: additional
+    preflight_message: "This will install data for Home Health Module in your org"
+    checks:
+      - when: "not org_config.is_person_accounts_enabled"
+        action: error
+        message: "Home Health feature requires Person Accounts. Please activate the Person Accounts feature and try again."
+    steps:
+      1:
+        flow: hh_data_setup
