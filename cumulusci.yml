@@ -119,7 +119,7 @@ flows:
                     objects : Asset
                     where: "Name = 'Conference Room A' OR Name = 'Conference Room B' OR Name = 'Conference Room C'"
                 ui_options:
-                    name: Delete Temporary Assets
+                    name: Data Clean up Task
             
 plans:
   install:
