@@ -9,7 +9,7 @@
             "description": "tagline of product"
         },
         "description": {
-            "message": "Home Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.\r\n\r\n**Post Install Steps**: Follow the [document](https://salesforce.quip.com/oAbUAWMSlYBV) to manually configure Field Service Lightning Setting after installation.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
+            "message": "Home Health in Health Cloud optimizes home healthcare operations by collecting patient preferences, scheduling visits and resources, and utilizing Salesforce Field Service features for enhanced scheduling and mobile access to patient data.\r\n\r\n**Base Plan**  - Installs metadata configurations that help you get your org up and running. Recommended for all customers.\r\n\r\n**Sample Data Plan** - Installs sample data. Recommended for partners.This sample data is dependent on the metadata plan, please install that first before installing this.\r\n\r\n**Post Install Steps**: Follow the [document](https://salesforce.quip.com/oAbUAWMSlYBV) to manually configure Field Service Lightning Setting after installation.\r\n\r\n**IMPORTANT**: Salesforce does not recommend installing directly in production organizations. Instead, install in one of your free sandbox environments, or a developer organization first.",
             "description": "shown on product detail page (markdown)"
         }
     },
@@ -136,6 +136,10 @@
         },
         "Delete Temporary Assets": {
             "message": "Delete Temporary Assets",
+            "description": "title of installation step"
+        },
+        "Data Clean up Task": {
+            "message": "Data Clean up Task",
             "description": "title of installation step"
         }
     },
