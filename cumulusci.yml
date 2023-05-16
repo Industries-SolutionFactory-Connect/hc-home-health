@@ -114,7 +114,7 @@ flows:
 plans:
   install:
     slug: install
-    title: Install Home Health Feature
+    title: Base Plan 
     tier: primary
     is_listed: True
     preflight_message: "This will install metadata for Home Health Module in your org"
@@ -158,7 +158,7 @@ plans:
         flow: hh_metadata_setup
   data_flow:
     slug: data-flow
-    title: Install Business data
+    title: Sample Data Plan
     tier: additional
     preflight_message: "This will install data for Home Health Module in your org"
     checks:
